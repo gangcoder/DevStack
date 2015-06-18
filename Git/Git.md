@@ -1,4 +1,4 @@
-# Git
+1 Git
 
 ## 初始化操作
 
@@ -11,6 +11,15 @@ git config --global user.email "Your email"
 
 ### 初始化仓库
 
+```
 git init
 git add
 git commit -m 'comment'
+```
+
+### 状态与差异
+
+```
+git status
+git diff
+```
