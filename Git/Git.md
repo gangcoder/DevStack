@@ -39,3 +39,10 @@ git reset --hard HEAD^ HEAD表示当前版本，HEAD^^表示前2各版本 HEAD~1
 git reset --hard commit_id 回退到特定版本
 ```
 
+`git checkout --filename`
+撤销修改，如果暂存区没有该文件就从版本库提取文件
+
+`git reset HEAD filename`
+可以撤销暂存区的修改
+
+
