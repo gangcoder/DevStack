@@ -65,3 +65,15 @@ git checkout --filename
 `ssh-keygen -t rsa -C 'example@server.com'` 生成ssh key
 
 `ssh -T git@github.com` 测试ssh key添加成功
+
+### 添加远程仓库
+
+`git remote add origin git_url` 关联远程库
+
+`git clone git_url` 克隆远程仓库
+
+### 推送
+
+`git push -u origin master`
+
+-u 在远程和本地分支间建立联系,第一次建立即可
