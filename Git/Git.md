@@ -23,3 +23,9 @@ git commit -m 'comment'
 git status
 git diff
 ```
+
+### 日志
+
+```
+git log --pretty=oneline
+```
