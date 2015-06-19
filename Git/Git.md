@@ -45,4 +45,23 @@ git reset --hard commit_id 回退到特定版本
 `git reset HEAD filename`
 可以撤销暂存区的修改
 
+### 文件删除与恢复
 
+从版本库删除
+```
+git rm filename
+git commit -m 'delete filename'
+```
+
+从版本库恢复
+```
+git checkout --filename
+```
+
+## 远程仓库
+
+### SSH key
+
+`ssh-keygen -t rsa -C 'example@server.com'` 生成ssh key
+
+`ssh -T git@github.com` 测试ssh key添加成功
