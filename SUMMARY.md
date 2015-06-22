@@ -5,5 +5,8 @@
 * [正则表达式](RegularExpression.md)
 * [Lua](Lua.md)
 * [书单列表](Books/Basic.md)
-* [编辑器](Editor/tmux.md)
+* [Editor]
+	* [Tmux](Editor/tmux.md)
+	* [VIM](Editor/VIM.md)
+		* [NERDTree](Editor/NERTree.md)
 * [Git](Git/Git.md)
