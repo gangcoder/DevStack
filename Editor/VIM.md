@@ -86,7 +86,7 @@ git clone git_path_url
 - tablast 移动到最后一个
 - tabm[n] 移动到第n个标签
 
-### 相关配置
+## 配置
 
 - vim 默认只能打开10个标签页 `set tabpagemax=15`
 - 标签页在窗口上方是否显示 `set showtabline=[1,2,3]
@@ -101,3 +101,60 @@ git clone git_path_url
 - `:ls` 显示buffer情况
 - `:shell` 不关闭vim的情况下切换至shell
 - `:exit` 从shell回到vim
+- ZZ 存储离开
+- :r [filename] 读取文档
+- :n1,n2 w [filename] 存储n1,n2间的内容为filename文档
+
+## 基本操作
+
+### 移动
+
+- C + f 下移一页
+- C + b 上移一页
+- C + d 下移半页
+- C + u 上移半页
+- + 光标下移一列
+- - 光标上移一列
+- n <space> 右移n 个字符
+- 0 [Home] 行首
+- gg == 1G
+- n <Enter> 下移n 行
+
+- zt
+- zz
+- zb
+
+- w [W]
+- b [B]
+- e [E]
+- ge [gE]
+
+### 复制粘贴
+
+`[line]y[scope]` 复制
+
+`p/P` 粘贴
+
+### 大小写转换
+
+`[line]gu[scope]` 转小写
+
+`[line]gU[scope]` 转大写
+
+scope 表示范围可能取值
+
+- w,e 转换单词
+- nw,ne 转换n个单词
+- nG 转换光标到nG行
+- 0, $ 转换光标到行首，行尾
+- h,l 转换光标前后一个字母
+
+line 表示转换当前光标下多少行
+
+### 查找替换
+
+- `/word`
+- `?word` 向上查找
+
+- `n1,n2s/word/replace/g` 替换n1 到n2 行之间的word 为replace
+- `1,$s/word/replace/gc` 确认并替换整篇文件的word 为replace
