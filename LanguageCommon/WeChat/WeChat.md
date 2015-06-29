@@ -10,7 +10,7 @@
 - [百度地图](http://developer.baidu.com/map/)
 
 
-## [验证服务器有效性(]http://mp.weixin.qq.com/wiki/17/2d4265491f12608cd170a95559800f2d.html)
+## [验证服务器有效性](http://mp.weixin.qq.com/wiki/17/2d4265491f12608cd170a95559800f2d.html)
 
 
 ## 开发模式
