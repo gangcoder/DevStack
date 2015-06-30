@@ -146,3 +146,32 @@ git stash apply stash@{0} 恢复指定的工作区
 `git tag -d v0.9` 先删除本地标签
 
 `git push origin :refs/tags/v0.9` 删除远程分支
+
+## GitHub
+
+## 自定义
+
+`git config --global color.ui true`
+
+### .gitignore
+
+[github ignore](https://github.com/github/gitignore)
+
+忽略文件原则：
+- 自动生成文件
+- 中间件
+- 敏感信息
+
+### 别名
+
+```
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.br branch
+git config --global alias.unstage 'reset HEAD'
+git config --global alias.last 'log -1'
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+
+global 配置文件 ~/.gitconfig
