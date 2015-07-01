@@ -1,2 +1,2 @@
-dofile('./helpers/complexmodel.lua')
+dofile('./helpers/func.lua')
 requiretest()
