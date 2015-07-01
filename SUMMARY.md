@@ -8,7 +8,9 @@
         * [Lua Syntax](./Language/Lua/LuaSyntax.md)
         * [Lua RegularExpression](./Language/Lua/LuaRegularExpression.md)
         * [More About Function](./Language/Lua/MoreAboutFunction/Function.md)
+        * [Lua Library](./Language/Lua/LuaCodeSegment/luacodelibrary.md)
     * [Python](./Language/Python/python.md)
+
 * [Language Common](./LanguageCommon/languagecommon.md)
     * [DesignPattern](./LanguageCommon/DesignPattern/DesignPattern.md)
     * [NameSpace](./LanguageCommon/NameSpace/namespace.md)
