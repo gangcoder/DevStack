@@ -50,7 +50,44 @@ function explodeIter(string, delimiter)
     end
 end
 
-pathstr = package.path
-for path in explodeIter(pathstr, ';') do
-    print(path)
+--pathstr = package.path
+--for path in explodeIter(pathstr, ';') do
+    --print(path)
+--end
+
+-- 获取HTML文档 title
+function getTitle(fname)
+    local fp = io.open(fname, "r")
+    if fp == nil then
+        return false
+    end
+
+    local s = fp:read("*all")
+    fp:close()
+    
+    s = string.gsub(s, "\n",  " ")
+    s = string.gsub(s, " *< *", "<")
+    s = string.gsub(s, " *> *", ">")
+
+    -- put all tags to lowercase
+    s = string.gsub(s, "(<[^ >]+)", string.lower)
+    
+    local i, f, t = string.find(s, "<title>(.+)</title>")
+    return t or ""
+end
+
+---- 测试代码
+--if arg[1] == nil then
+    --print('Usage: lua'..arg[0]..'<filename>[...]')
+    --os.exit(1)
+--end
+
+function filegetcontents(filename)
+    local fp = io.open(filename, 'r')
+    if fp == nil then
+        return false
+    end
+    local s = fp:read('*all')
+    fp:close()
+    return s
 end
