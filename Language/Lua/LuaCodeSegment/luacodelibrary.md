@@ -4,3 +4,72 @@
 
 - explode() --使用PHP explode()功能
 - explodeIter() -- explode for iterator
+
+[Lua 函数式代码库](./fun.lua) [github](https://github.com/rtsisyk/luafun)
+
+- ones
+- maximum
+- range
+- each
+- totable
+- max
+- some
+- split
+- zip
+- duplicate
+- replicate
+- zeros
+- map
+- elem_indices
+- minimum_by
+- filter
+- drop_while
+- indexes
+- indices
+- take
+- tabulate
+- length
+- grep
+- any
+- remove_if
+- elem_indexes
+- drop_n
+- drop
+- wrap
+- tomap
+- index_of
+- enumerate
+- every
+- reduce
+- iter
+- take_while
+- minimum
+- cdr
+- all
+- nth
+- foldl
+- take_n
+- index
+- min
+- split_at
+- operator
+- partition
+- product
+- tail
+- chain
+- min_by
+- elem_index
+- span
+- head
+- sum
+- car
+- cycle
+- is_null
+- op
+- max_by
+- for_each
+- intersperse
+- xrepeat
+- is_prefix_of
+- rands
+- foreach
