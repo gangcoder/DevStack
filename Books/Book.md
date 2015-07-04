@@ -8,23 +8,37 @@
 
 ## DataBase
 
-### database
+### SQL
 
-### mongodb
+- _SQL Cookbook_ SQL语言学习书籍
 
 ### mysql
 
+- _MySQL Stored Procedure Programming_ 学习MySQL 存储过程语法和编写的最好教材
+- _High Performance MySQL_ MySQL界的圣经,详细讲解MySQL运维各个部分
+- _MySQL技术内幕 innodb 存储引擎_ 很详细的从代码层面分析了Innodb的内部结构，适合深入学习innodb
+
 ### Redis
 
-### SQL
+- 《Redis入门指南》
+- 《Redis设计与实现》讲解Redis内部实现与各种特性演示
+
+### mongodb
+
+[参考](http://mp.weixin.qq.com/s?__biz=MjM5NjQ4MjYwMQ==&mid=204727119&idx=1&sn=11b413f0fa51e8373454d0be42448f6e&scene=5#rd)
 
 ## DevelopmentEnvironment
 
-### developmentenvironment
-
 ### Editor
 
+- Tmux
+- Vim
+
 ### Git
+
+- [廖雪峰Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000) 简单易懂，快速上手Git
+- [权威Git中文教程](http://git.oschina.net/progit/) 权威，全面，有理解成本
+- [Git官网手册](http://git-scm.com/docs) 官方，英文
 
 ## DevOps
 
@@ -32,7 +46,12 @@
 
 ## Foundation
 
-### foundation
+### Operating Systems
+
+- Operating System Concepts (9th Edition) 《操作系统概念 (第七版)》
+- Operating Systems : Design and Implementation (3rd Edition) 《操作系统：设计及实现 (第三版)》
+
+[参考](http://blog.csdn.net/pysjp/article/details/3937245)
 
 ### Linux
 
