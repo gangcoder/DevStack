@@ -61,6 +61,7 @@
 
 - [x] Programming in Lua 3th 官方出的教材，最新版是第三版，有第二版中文的，可百度之。现在Redis, Nignx，都使用Lua
 作为开发脚本，而且广泛应用于移动端。如果需要学习，建议从这本书开始.
+- [ ] _Beginning Lua Programming_ 侧重技巧与使用
 
 ### PHP
 

@@ -7,6 +7,7 @@
         * [Lua RegularExpression](./Language/Lua/LuaRegularExpression.md)
         * [More About Function](./Language/Lua/MoreAboutFunction/Function.md)
         * [Lua Library](./Language/Lua/LuaCodeSegment/luacodelibrary.md)
+        * [Lua Module](./Language/Lua/Require/require.md)
     * [Shell](./Language/Shell/shell.md)
     * [Python](./Language/Python/python.md)
 
