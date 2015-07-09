@@ -2,13 +2,12 @@
 /**
  * redis 连接
  */
-class FeeyoRedis
+class StudyRedis
 {
     private $_handle;//Redis连接句柄
-
+    //Redis连接
     private function __construct(){
-        //$redis_host='127.0.0.1';
-        $redis_host='192.168.2.32';
+        $redis_host='127.0.0.1';
         $redis_port='6379';
         try{
             $this->_handle = new Redis();
@@ -17,27 +16,23 @@ class FeeyoRedis
         }catch (RedisException $e){
             error_log(
                 date('Y-m-d H:i:s').
-                ' flight flow redis is down: '.
+                ' redis is down: '.
                 $e->getMessage()."\r\n",3,DB_RUN_LOG.date('Y-m-d').'.log');
             exit;
         }
     }
-
     private function __clone(){}
-
     //返回单例
     public static function getInstance(){
         static $instance = null;
         if ($instance == null) {
-            $instance = new FeeyoRedis;
+            $instance = new self;
         }
         return $instance;
     }
-
     public function handle(){
         return $this->_handle;
     }
-
     //检查Redis连接是否有数据
     public function checkConnect(){
         if($this->_handle->ping()!='+PONG') exit();
@@ -48,11 +43,13 @@ class FeeyoRedis
             return true;
         }
     }
-
     //获取list中一条记录的id
     public function popOne(){
-        $vs=unserialize($this->_handle->lpop('pushto_flighflow'));
-        //var_dump($vs);
-        return $vs['4'];
+        return $this->_handle->lpop('list');
     }
 }
+//usage
+//$studyredis = StudyRedis::getInstance();
+//$redis = $studyredis->handle();
+//$redis->set('foo', 'test');
+//echo $redis->get('foo');

@@ -12,9 +12,9 @@ class FeeyoPDO
     private $_arr;  //flight flow 到达字段内容
     //初始化连接
     private function __construct(){
-        $db_dsn  = 'mysql:host=xxx;port=3306;dbname=xxx';
-        $db_user = '';
-        $db_pwd  = '';
+        $db_dsn  = 'mysql:host=127.0.0.1;port=3306;dbname=flight';
+        $db_user = 'root';
+        $db_pwd  = '123';
         try{
             $this->_handle = new PDO($db_dsn,$db_user, $db_pwd,
                 [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\'',

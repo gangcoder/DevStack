@@ -30,6 +30,7 @@
         * [VIM](./DevelopmentEnvironment/Editor/VIM.md)
             * [plugin keymap](./DevelopmentEnvironment/Editor/NERDTree.md)
     * [Git](./DevelopmentEnvironment/Git/Git.md)
+        * [GitStrategy](./DevelopmentEnvironment/Git/gitstrategy.md)
     * [gitbook](./DevelopmentEnvironment/gitbook.md)
 
 * [Book List](./Books/Book.md)
