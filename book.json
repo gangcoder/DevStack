@@ -1,4 +1,29 @@
 {
-    "title":"Outer Brain Manual",
-    "plugins": ["collapsible-menu"]
+    "title":"Outer Brain",
+    "description":"blog of xg",
+    "keywords":"git,技术,学习,提升",
+    "github":"hubeixugang/Accumulate",
+    "githubHost":"https://github.com",
+    "plugins": ["collapsible-menu", "gtoc"],
+    "links": {
+        "contribute": false,
+        "sidebar": {
+            "About Author":"https://github.com/hubeixugang",
+            "Questions and Issues":"https://github.com/hubeixugang/Accumulate/issues",
+            "Eidt and Contribute":"https://github.com/hubeixugang/Accumulate"
+        },
+        "tail": {
+            "Xu Gang":"mailto:hubeixugang@163.com"
+        },
+        "gitbook":"false",
+        "sharing":{
+             "google": null,
+             "facebook": null,
+             "twitter": null,
+             "weibo": null,
+             "qrcode": true,
+             "all": null
+        }
+    },
+    "gitbook": ">=2.0.0"
 }

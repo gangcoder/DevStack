@@ -1,14 +1,13 @@
 # Summary
 
-目录
-
 * [Language](./Language/language.md)
     * [PHP](./Language/PHP/php.md)
-    * [Lua](./Language/Lua/Lua.md)
-        * [Lua Syntax](./Language/Lua/LuaSyntax.md)
+    * [Lua](./Language/Lua/LuaSyntax.md)
         * [Lua RegularExpression](./Language/Lua/LuaRegularExpression.md)
         * [More About Function](./Language/Lua/MoreAboutFunction/Function.md)
         * [Lua Library](./Language/Lua/LuaCodeSegment/luacodelibrary.md)
+        * [Lua Module](./Language/Lua/Require/require.md)
+    * [Shell](./Language/Shell/shell.md)
     * [Python](./Language/Python/python.md)
 
 * [Language Common](./LanguageCommon/languagecommon.md)
@@ -31,7 +30,9 @@
         * [VIM](./DevelopmentEnvironment/Editor/VIM.md)
             * [plugin keymap](./DevelopmentEnvironment/Editor/NERDTree.md)
     * [Git](./DevelopmentEnvironment/Git/Git.md)
+        * [GitStrategy](./DevelopmentEnvironment/Git/gitstrategy.md)
     * [gitbook](./DevelopmentEnvironment/gitbook.md)
 
-* [Book List](Books/Basic.md)
+* [Book List](./Books/Book.md)
     * [Master`s Blog](./Books/blog.md)
+    * [Resource](./Books/resource.md)

@@ -1,6 +1,8 @@
-# Introduction
+# Accumulate
 
 本人智力中等偏下，学过的东西都需要整理归纳
+
+---
 
 建立此手册目的：
 
@@ -10,12 +12,20 @@
 
 为了满足上述要求，本手册不包含基础知识，而以作为大脑的延伸为目标
 
-这也是为了提升效率，一切为了Professional, Efficient, [Money](<hubeixugang@163.com>)
+这也是为了提升效率，一切为了Professional, Efficient, Money
 
-欢迎大家一起构建这套铁打的后端手册^_^
+欢迎大家一起构建这套铁打后端手册^_^
+
+---
+
+Markdown源码地址 [https://github.com/hubeixugang/Accumulate](https://github.com/hubeixugang/Accumulate)
+
+静态页面地址 [http://hubeixugang.github.io](http://hubeixugang.github.io)
 
 构建工具:Gitbook + Markdown
 
-<hubeixugang@gmail.com>
+<hubeixugang@163.com>
+
+<img src="./wechat.png" width="216" height="216" />
 
 2015/6/14
