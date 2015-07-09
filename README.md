@@ -1,4 +1,4 @@
-# Outer Brain Manual
+# Accumulate
 
 本人智力中等偏下，学过的东西都需要整理归纳
 
@@ -20,11 +20,11 @@
 
 Markdown源码地址 [https://github.com/hubeixugang/Accumulate](https://github.com/hubeixugang/Accumulate)
 
-静态页面地址 [https://github.com/hubeixugang/hubeixugang.github.io](https://github.com/hubeixugang/hubeixugang.github.io)
+静态页面地址 [http://hubeixugang.github.io](http://hubeixugang.github.io)
 
 构建工具:Gitbook + Markdown
 
-<hubeixugang@gmail.com>
+<hubeixugang@163.com>
 
 <img src="./wechat.png" width="216" height="216" />
 

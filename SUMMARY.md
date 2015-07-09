@@ -2,8 +2,7 @@
 
 * [Language](./Language/language.md)
     * [PHP](./Language/PHP/php.md)
-    * [Lua](./Language/Lua/Lua.md)
-        * [Lua Syntax](./Language/Lua/LuaSyntax.md)
+    * [Lua](./Language/Lua/LuaSyntax.md)
         * [Lua RegularExpression](./Language/Lua/LuaRegularExpression.md)
         * [More About Function](./Language/Lua/MoreAboutFunction/Function.md)
         * [Lua Library](./Language/Lua/LuaCodeSegment/luacodelibrary.md)
@@ -35,3 +34,4 @@
 
 * [Book List](./Books/Book.md)
     * [Master`s Blog](./Books/blog.md)
+    * [Resource](./Books/resource.md)

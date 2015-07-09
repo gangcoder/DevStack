@@ -68,6 +68,7 @@
 - [x] 《PHP核心技术与最佳实践》：初级PHP开发向中级PHP工程师迈进的第一步
 讲解PHP 的面向对象，设计模式，正则，网络，WebServier, Smarty,memecache, redis, nginx,调试, 编码规范等方面知识
 因为东西太多，所以可方面内容都不是很深，对于扩展知识面向高级工程师进发打好基础
+- [ ] 《深入PHP面向对象，模式与实践》看它的目录，感觉内容还不错。大量篇幅讲模式，最后讲的是phpDocumentor, PHPUnit, Phing。
 
 ### Python
 
