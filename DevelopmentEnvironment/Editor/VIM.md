@@ -1,24 +1,6 @@
 # VIM
 
-## 插件
-
-### plugin lists
-
-- [pathogen 插件管理插件](https://github.com/tpope/vim-pathogen)
-- [NERDTree 目录结构](https://github.com/scrooloose/nerdtree)
-- [Command-T 文件跳转](https://github.com/wincent/Command-T.git) (http://www.justinbar.net/post/install-vim-with-ruby-support-and-command-t-plugin-on-ubuntu)
-- [Powerline 状态栏](https://github.com/Lokaltog/vim-powerline)
-- [vim-snipmate 代码片段](https://github.com/garbas/vim-snipmate)
-- [visualmark 标记](http://www.vim.org/scripts/download_script.php?src_id=4700)
-- [taglist 代码结构](https://github.com/vim-scripts/taglist.vim)
-- [YouCompleteMe 补全](https://github.com/Valloric/YouCompleteMe#ubuntu-linux-x64-super-quick-installation)
-
-### pathogen 插件安装
-
-```
-cd ~/.vim/bundle
-git clone git_path_url
-```
+vim 快捷键整理搜集
 
 ## 分屏
 
@@ -109,25 +91,52 @@ git clone git_path_url
 
 ### 移动
 
-- C + f 下移一页
-- C + b 上移一页
-- C + d 下移半页
-- C + u 上移半页
-- + 光标下移一列
-- - 光标上移一列
-- n <space> 右移n 个字符
-- 0 [Home] 行首
-- gg == 1G
-- n <Enter> 下移n 行
+#### Movement by screensi
 
-- zt
-- zz
-- zb
+| 命令      | 解释             | 命令   | 解释                |
+|-----------|------------------|--------|---------------------|
+| ^ + f     | 下移一页         | ^ + b  | 上移一页            |
+| ^ + d     | 下移半页         | ^ + u  | 上移半页            |
+| ^ + y     | 下移一行         | ^ + e  | 上移一行            |
+| zt[Enter] | 移动到屏幕顶部   | zz[.]  | 移动到屏幕中间      |
+| zb[-]     | 移动到屏幕底部   | nzz    | 第n行移动到屏幕中间 |
+| H         | 移到屏幕顶部的行 | M      | 移到屏幕中间的行    |
+| L         | 移到屏幕底部的行 | nH     | 移到顶部下n行       |
+| nL        | 移到底部上n行    | nEnter | 下移n行             |
+| +         | 下移一行         | -      | 上移一行            |
+| ^         | 第一个非空格处   | n\     | 移动到当前行的n列   |
+| n <space> | 右移n 个字符     |
 
-- w [W]
-- b [B]
-- e [E]
-- ge [gE]
+#### Movement by text blocksi
+
+| 命令 | 解释               | 命令 | 解释               |
+|------|--------------------|------|--------------------|
+| w    | 移到下一个单词开头 | b    | 移到上一个单词开头 |
+| e    | 移到单词结尾       | (    | 移到当前句子开头   |
+| )    | 下一行句子开头     | {    | 这一段的开头       |
+| }    | 下一段的开头       | [[   | 这一节的开头       |
+| ]]   | 下一节的开头       | ge [gE] | 移到上一个单词  |
+
+#### Movement by searches for patternsi
+
+| 命令       | 解释                      | 命令       | 解释           |
+|------------|---------------------------|------------|----------------|
+| /          | 往前搜索                  | ?          | 往回搜索       |
+| n [/Enter] | 往前重复搜索              | N [?Enter] | 往回重复搜索   |
+| d/c        | 搜索c字符并删除前面的内容 | fx         | 向后搜索x      |
+| Fx         | 向前搜索x                 | tx         | 向后搜索x      |
+| Tx         | 向前搜索x                 | ;          | 重复上一次搜索 |
+| ,          | 重复搜索，方向相反        |
+
+set nowrapscan 控制搜索是否可以绕回开头
+
+#### Movement by line numberi
+
+| 命令 | 解释           | 命令 | 解释           |
+|------|----------------|------|----------------|
+| G    | 文件底部       | gg   | 文件首行       |
+| nG   | 移到n行        | \`\` | 返回上一个位置 |
+| ''   | 返回上一个位置 |
 
 ### 复制粘贴
 

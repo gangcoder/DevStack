@@ -28,7 +28,7 @@
     * [Editor](./DevelopmentEnvironment/Editor/editor.md)
         * [Tmux](./DevelopmentEnvironment/Editor/tmux.md)
         * [VIM](./DevelopmentEnvironment/Editor/VIM.md)
-            * [plugin keymap](./DevelopmentEnvironment/Editor/NERDTree.md)
+        * [NERDTree](./DevelopmentEnvironment/Editor/NERDTree.md)
     * [Git](./DevelopmentEnvironment/Git/Git.md)
         * [GitStrategy](./DevelopmentEnvironment/Git/gitstrategy.md)
     * [gitbook](./DevelopmentEnvironment/gitbook.md)
