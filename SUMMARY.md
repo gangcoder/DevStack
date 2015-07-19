@@ -7,6 +7,7 @@
         * [More About Function](./Language/Lua/MoreAboutFunction/Function.md)
         * [Lua Library](./Language/Lua/LuaCodeSegment/luacodelibrary.md)
         * [Lua Module](./Language/Lua/Require/require.md)
+        * [Lua Data Structures](./Language/Lua/DataStructures/datastructures.md)
     * [Shell](./Language/Shell/shell.md)
     * [Python](./Language/Python/python.md)
 

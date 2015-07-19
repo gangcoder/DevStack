@@ -16,3 +16,6 @@
 - [廖雪峰](http://www.liaoxuefeng.com/) JavaScript, Python, Git 入门教程
 - [岁寒](http://lvwenhan.com/) 前后端技术
     + Laravel5教程
+- [PHP-LUA](http://rmingwang.com/) PHP, Lua
+- [Vim](http://www.boiajs.com/tags/vim/) vim
+- [Vim](http://tieba.baidu.com/p/2859253088) vim

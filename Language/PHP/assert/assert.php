@@ -6,11 +6,16 @@ function assert_failure()
 {
     echo 'Assert Failed';
     // echo cli_get_process_title();
+    // echo cli_get_process_title();
 }
 
 function test_assert($parameter)
 {
     assert(is_bool($parameter));
+    //assert(is_bool($parameter));
+    //assert(is_bool($parameter));
+    //assert(is_bool($parameter));
+    //assert(is_bool($parameter));
 }
 
 assert_options(ASSERT_ACTIVE, true);

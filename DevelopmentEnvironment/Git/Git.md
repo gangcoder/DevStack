@@ -175,3 +175,5 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 ```
 
 global 配置文件 ~/.gitconfig
+
+[http://itmyhome.com/git/](http://itmyhome.com/git/)
