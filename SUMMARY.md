@@ -9,7 +9,7 @@
         * [Lua Module](./Language/Lua/Require/require.md)
         * [Lua Data Structures](./Language/Lua/DataStructures/datastructures.md)
     * [Shell](./Language/Shell/shell.md)
-    *   * [shell syntax](./Language/Shell/syntax.md)
+        * [shell syntax](./Language/Shell/syntax.md)
     * [Python](./Language/Python/python.md)
 
 * [Language Common](./LanguageCommon/languagecommon.md)
