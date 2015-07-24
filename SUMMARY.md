@@ -2,6 +2,7 @@
 
 * [Language](./Language/language.md)
     * [PHP](./Language/PHP/php.md)
+        * [PHP Code Segment](./Language/PHP/codeSegment/phpcodesegment.md)
     * [Lua](./Language/Lua/LuaSyntax.md)
         * [Lua RegularExpression](./Language/Lua/LuaRegularExpression.md)
         * [More About Function](./Language/Lua/MoreAboutFunction/Function.md)
@@ -17,6 +18,7 @@
     * [NameSpace](./LanguageCommon/NameSpace/namespace.md)
     * [WeChat](./LanguageCommon/WeChat/WeChat.md)
     * [RegularExpression](./LanguageCommon/RegularExpression.md)
+    * [IBM MQSeries](./LanguageCommon/MQSeries/mqseries.md)
 
 * [DataBase](./DataBase/database.md)
     * [Redis](./DataBase/Redis/redis.md)
