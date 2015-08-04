@@ -19,6 +19,9 @@
 - [PHP-LUA](http://rmingwang.com/) PHP, Lua
 - [Vim](http://www.boiajs.com/tags/vim/) vim
 - [Vim](http://tieba.baidu.com/p/2859253088) vim
+- [给力星](http://www.powerxing.com/) Linux
+- [Vamei](http://www.cnblogs.com/vamei/) Linux, Python
+- [Linux](http://www.cnblogs.com/peida/) Linux, Python
 
 ## 工具
 
