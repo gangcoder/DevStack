@@ -16,6 +16,7 @@
     * [Python](./Language/Python/python.md)
 
 * [Language Common](./LanguageCommon/languagecommon.md)
+    * [Code Style](./LanguageCommon/codestyle.md)
     * [DesignPattern](./LanguageCommon/DesignPattern/DesignPattern.md)
     * [NameSpace](./LanguageCommon/NameSpace/namespace.md)
     * [WeChat](./LanguageCommon/WeChat/WeChat.md)
@@ -30,6 +31,7 @@
     * [Arithmetic](./Foundation/Arithmetic/tree.md)
 
 * [DevOps](./DevOps/devops.md)
+    * [RESTful API](./DevOps/RESTful.md)
 
 * [Development Enviroment](./DevelopmentEnvironment/developmentenvironment.md)
     * [Editor](./DevelopmentEnvironment/Editor/editor.md)

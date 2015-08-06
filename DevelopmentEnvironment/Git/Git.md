@@ -83,7 +83,7 @@ git checkout --filename
 
 `git checkout -b dev origin/dev` 通过远程分支创建本地分支
 
-`git branch --set-upstream dev origin/dev` 建立本地分支与远程分支的联系
+`git branch --track dev origin/dev` 建立本地分支与远程分支的联系
 
 ## 分支
 
