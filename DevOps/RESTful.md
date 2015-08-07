@@ -1,36 +1,36 @@
 # RESTful API
 
-## ����ԭ��
+## 基本原则
 
-- ����׼������ʱ�����ر�׼��
-- APIӦ�öԳ���Ա�Ѻã��������������ַ���������롣
-- APIӦ�ü򵥣�ֱ�ۣ�����ʹ�õ�ͬʱ���š�
-- APIӦ�þ����㹻���������֧���ϲ�ui��
-- API���Ȩ����������ԭ��
+- 当标准合理的时候遵守标准。
+- API应该对程序员友好，并且在浏览器地址栏容易输入。
+- API应该简单，直观，容易使用的同时优雅。
+- API应该具有足够的灵活性来支持上层ui。
+- API设计权衡上述几个原则。
 
-## ��Դ
+## 资源
 
-API���Ϊ�߼��ϵ���Դ����ӦHTTP���в���(GET, PUT, POST, DELETE)
+API拆分为逻辑上的资源，对应HTTP进行操作(GET, PUT, POST, DELETE)
 
-### URL �� Action
+### URL 和 Action
 
-- POST �½�
-- GET ��ȡ
-- PUT ����
-- DELETE ɾ��
+- POST 新建
+- GET 获取
+- PUT 更新
+- DELETE 删除
 
-URL��������: endpoint /resource
+URL命名规则: endpoint /resource
 
-- GET /tickets # ��ȡticket�б�
-- GET /tickets/12 # �鿴ĳ�������ticket
-- POST /tickets # �½�һ��ticket
-- PUT /tickets/12 # ����ticket 12.
-- DELETE /tickets/12 #ɾ��ticekt 12
+- GET /tickets # 获取ticket列表
+- GET /tickets/12 # 查看某个具体的ticket
+- POST /tickets # 新建一个ticket
+- PUT /tickets/12 # 更新ticket 12.
+- DELETE /tickets/12 #删除ticekt 12
 
-- ʹ������
-- ʹ���ض���������� 
+- 使用名词
+- 使用特定领域的名称 
 
-### ��Դ����
+### 资源关联
 
 
 - GET /tickets/12/messages- Retrieves list of messages for ticket #12
@@ -40,76 +40,76 @@ URL��������: endpoint /resource
 - PATCH /tickets/12/messages/5- Partially updates message #5 for ticket #12
 - DELETE /tickets/12/messages/5- Deletes message #5 for ticket #12
 
-### ���ˣ���������
+### 过滤，排序，搜索
 
-url���Խ���Խ�ã��ͽ�����ˣ�����������صĹ��ܶ�Ӧ��ͨ������ʵ��
+url最好越简短越好，和结果过滤，排序，搜索相关的功能都应该通过参数实现
 
-### ���Ʒ�����
+### 限制返回域
 
-APIʹ���߲���Ҫ���н��
+API使用者不需要所有结果
 
-��������: ����ֵ����API�����ǰʮ��
+横向限制: 例如值返回API结果的前十项
 
-��������: ������һ����¼�Ĳ�������
+纵向限制: 仅返回一条记录的部分数据
 
-����������ʹ���ʺ��ٶ�
+提高网络带宽使用率和速度
 
-## ����
+## 其他
 
-### ������CURD�Ĳ���
+### 不符合CURD的操作
 
-- �ع�
-- ����Դ
-- �ĵ�
+- 重构
+- 子资源
+- 文档
 
 ### SSL
 
-### �ĵ�
+### 文档
 
-- ���׻��
-- ��������ʾ��
-- �Գɹ���������Ӧ�����ṩԤ�ڽ��
-- ��¼��ÿһ�������벢�ṩ��������Ϣ
+- 容易获得
+- 请求和输出示例
+- 对成功或错误的响应都能提供预期结果
+- 记录下每一个错误码并提供完整的信息
 
-### �汾��
+### 版本化
 
-url�������汾��Ϣ������ͷ�����Ӱ汾��Ϣ
+url包含主版本信息，请求头包含子版本信息
 
-### ����
+### 返回
 
-- ���ºʹ�������Ӧ�÷�����Դ
-- ʹ��gzip
+- 更新和创建操作应该返回资源
+- 使用gzip
 
-JSON��Ӧ�ĵ��߱���ͬ�ṹ
+JSON响应文档具备相同结构
 
-*meta*: �����Ϣ
+*meta*: 结果信息
 
-*data*: �������
+*data*: 结果数据
 
-### ����
+### 输入
 
-JSON ��ʽ����
+JSON 格式参数
 
-ע��ʹ��: `Content-Type��application/json`
+注意使用: `Content-Type：application/json`
 
-### ��ҳ
+### 分页
 
-### �ٶ�����
+### 速度限制
 
 HTTP 429 too many requests
 
 ### Authentication
 
-RESTful API����״̬��ʹ��SSL
+RESTful API属无状态，使用SSL
 
-## ������
+## 错误处理
 
-- 400ϵ�б����ͻ��˴��������������ʽ��
-- 500ϵ�б�ʾ����������
+- 400系列表明客户端错误：如错误的请求格式等
+- 500系列表示服务器错误
 
 *JSON*
 
-һ�����õĴ�����Ϣ��һ��Ψһ�Ĵ����룬�Լ��κο��ܵ���ϸ��������
+一个有用的错误信息，一个唯一的错误码，以及任何可能的详细错误描述
 
 ```
 {
@@ -123,18 +123,18 @@ RESTful API����״̬��ʹ��SSL
 }
 ```
 
-- 200 ok  - �ɹ�����״̬����Ӧ��GET,PUT,PATCH,DELETE.
-- 201 created  - �ɹ�������
-- 304 not modified   - HTTP������Ч��
-- 400 bad request   - �����ʽ����
-- 401 unauthorized   - δ��Ȩ��
-- 403 forbidden   - ��Ȩ�ɹ������Ǹ��û�û��Ȩ�ޡ�
-- 404 not found - �������Դ������
-- 405 method not allowed - ��http��������������
-- 410 gone - ���url��Ӧ����Դ���ڲ����á�
-- 415 unsupported media type - �������ʹ���
-- 422 unprocessable entity - У�����ʱ�á�
-- 429 too many request - ������ࡣ
+- 200 ok  - 成功返回状态，对应，GET,PUT,PATCH,DELETE.
+- 201 created  - 成功创建。
+- 304 not modified   - HTTP缓存有效。
+- 400 bad request   - 请求格式错误。
+- 401 unauthorized   - 未授权。
+- 403 forbidden   - 鉴权成功，但是该用户没有权限。
+- 404 not found - 请求的资源不存在
+- 405 method not allowed - 该http方法不被允许。
+- 410 gone - 这个url对应的资源现在不可用。
+- 415 unsupported media type - 请求类型错误。
+- 422 unprocessable entity - 校验错误时用。
+- 429 too many request - 请求过多。
 
-- [REST���](http://blog.jobbole.com/88551/)
-- [��̸RESTAPI���ʵ��](http://blog.jobbole.com/70511/)
+- [REST简介](http://blog.jobbole.com/88551/)
+- [再谈RESTAPI最佳实践](http://blog.jobbole.com/70511/)

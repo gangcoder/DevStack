@@ -16,6 +16,7 @@
     * [Python](./Language/Python/python.md)
 
 * [Language Common](./LanguageCommon/languagecommon.md)
+    * [Code Structure](./LanguageCommon/Structure/structure.md)
     * [Code Style](./LanguageCommon/codestyle.md)
     * [DesignPattern](./LanguageCommon/DesignPattern/DesignPattern.md)
     * [NameSpace](./LanguageCommon/NameSpace/namespace.md)
@@ -45,3 +46,4 @@
 * [Book List](./Books/Book.md)
     * [Master`s Blog](./Books/blog.md)
     * [Resource](./Books/resource.md)
+    * [Engineer](./Books/Engineer.md)

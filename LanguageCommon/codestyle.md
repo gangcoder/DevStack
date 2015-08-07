@@ -157,8 +157,7 @@ try {
 } catch (FirstExceptionType $e) {
     // catch body
 } catch (OtherExceptionType $e) {
-    // catch body
-}
+    // catch body}
 
 $closureWithArgs = function ($arg1, $arg2) {
     // body
@@ -167,7 +166,7 @@ $closureWithArgs = function ($arg1, $arg2) {
 $closureWithArgsAndVars = function ($arg1, $arg2) use ($var1, $var2) {
     // body
 };
-
+```
 
 ## Logger Interface
 

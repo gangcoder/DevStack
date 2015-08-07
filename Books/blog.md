@@ -23,6 +23,9 @@
 - [给力星](http://www.powerxing.com/) Linux
 - [Vamei](http://www.cnblogs.com/vamei/) Linux, Python
 - [Linux](http://www.cnblogs.com/peida/) Linux, Python
+- [淘宝搜索](http://www.searchtb.com/)
+- [http://insights.thoughtworkers.org/author/twinsights/](http://insights.thoughtworkers.org/author/twinsights/)
+- [关于学习](http://liguanglei.name/blogs/)
 
 ## 工具
 
