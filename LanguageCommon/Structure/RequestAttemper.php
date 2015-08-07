@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?php
 var_dump($_SERVER["REQUEST_URI"]);
 ///git/Accumulate/LanguageCommon/Structure/RequestAttemper.php/%20?abc=cba&123=321
@@ -15,3 +16,13 @@ var_dump($paramArr);
 //   5 => string ' ' (length=1)
 //   'abc' => string 'cba' (length=3)
 //   6 => string '321' (length=3)
+=======
+<?php
+var_dump($_SERVER["REQUEST_URI"]);
+$paramArr = explode( '/', trim(strtok(urldecode($_SERVER["REQUEST_URI"]),'?'),'/'));
+$paramArr = array_merge($paramArr,$_GET);
+
+var_dump($paramArr);
+
+var_dump(pathinfo(__FILE__));
+>>>>>>> Stashed changes
