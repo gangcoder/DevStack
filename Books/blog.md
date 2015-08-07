@@ -26,6 +26,7 @@
 - [淘宝搜索](http://www.searchtb.com/)
 - [http://insights.thoughtworkers.org/author/twinsights/](http://insights.thoughtworkers.org/author/twinsights/)
 - [关于学习](http://liguanglei.name/blogs/)
+- [http://www.guangla.com/](http://www.guangla.com/)
 
 ## 工具
 
