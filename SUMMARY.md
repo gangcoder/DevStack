@@ -19,6 +19,7 @@
     * [Code Structure](./LanguageCommon/Structure/structure.md)
     * [Code Style](./LanguageCommon/codestyle.md)
     * [DesignPattern](./LanguageCommon/DesignPattern/DesignPattern.md)
+        * [DesignPattern](./LanguageCommon/DesignPattern/patternsegment.md)
     * [NameSpace](./LanguageCommon/NameSpace/namespace.md)
     * [WeChat](./LanguageCommon/WeChat/WeChat.md)
     * [RegularExpression](./LanguageCommon/RegularExpression.md)
