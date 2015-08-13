@@ -139,3 +139,4 @@ RESTful API属无状态，使用SSL
 
 - [REST简介](http://blog.jobbole.com/88551/)
 - [RESTAPI](http://blog.jobbole.com/70511/)
+- [PHP 请求代码]('./request.php')
