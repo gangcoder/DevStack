@@ -138,21 +138,4 @@ RESTful APIå±žæ— çŠ¶æ€ï¼Œä½¿ç”¨SSL
 - 429 too many request - è¯·æ±‚è¿‡å¤šã€‚
 
 - [RESTç®€ä»‹](http://blog.jobbole.com/88551/)
-- [å†è°ˆRESTAPIæœ€ä½³å®žè·µ](http://blog.jobbole.com/70511/)
-=======
-- 200 ok  - ³É¹¦·µ»Ø×´Ì¬£¬¶ÔÓ¦£¬GET,PUT,PATCH,DELETE.
-- 201 created  - ³É¹¦´´½¨¡£
-- 304 not modified   - HTTP»º´æÓÐÐ§¡£
-- 400 bad request   - ÇëÇó¸ñÊ½´íÎó¡£
-- 401 unauthorized   - Î´ÊÚÈ¨¡£
-- 403 forbidden   - ¼øÈ¨³É¹¦£¬µ«ÊÇ¸ÃÓÃ»§Ã»ÓÐÈ¨ÏÞ¡£
-- 404 not found - ÇëÇóµÄ×ÊÔ´²»´æÔÚ
-- 405 method not allowed - ¸Ãhttp·½·¨²»±»ÔÊÐí¡£
-- 410 gone - Õâ¸öurl¶ÔÓ¦µÄ×ÊÔ´ÏÖÔÚ²»¿ÉÓÃ¡£
-- 415 unsupported media type - ÇëÇóÀàÐÍ´íÎó¡£
-- 422 unprocessable entity - Ð£Ñé´íÎóÊ±ÓÃ¡£
-- 429 too many request - ÇëÇó¹ý¶à¡£
-
-- [REST¼ò½é](http://blog.jobbole.com/88551/)
-- [ÔÙÌ¸RESTAPI×î¼ÑÊµ¼ù](http://blog.jobbole.com/70511/)
->>>>>>> Stashed changes
+- [RESTAPI](http://blog.jobbole.com/70511/)
