@@ -1,4 +1,0 @@
-<?php
-echo '<strong>Hello, SAE!</strong>';
-
-phpinfo();
