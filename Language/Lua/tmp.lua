@@ -1,2 +1,5 @@
-local str = '/yidao/images/jieji.gif'
-print(string.match(str, '/(%a+)/'))
+sum = ''
+for i=1, 10 do
+    sum=sum..i
+end
+print(sum)

@@ -83,7 +83,7 @@ git checkout --filename
 
 `git checkout -b dev origin/dev` 通过远程分支创建本地分支
 
-`git branch --set-upstream dev origin/dev` 建立本地分支与远程分支的联系
+`git branch --track dev origin/dev` 建立本地分支与远程分支的联系
 
 ## 分支
 
@@ -175,3 +175,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 ```
 
 global 配置文件 ~/.gitconfig
+
+[http://itmyhome.com/git/](http://itmyhome.com/git/)
+[http://www.ituring.com.cn/article/202419](http://www.ituring.com.cn/article/202419)
+[https://www.andyjeffries.co.uk/25-tips-for-intermediate-git-users/](https://www.andyjeffries.co.uk/25-tips-for-intermediate-git-users/)

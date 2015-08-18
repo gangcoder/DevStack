@@ -1,133 +1,57 @@
 # VIM
 
-## 插件
-
-### plugin lists
-
-- [pathogen 插件管理插件](https://github.com/tpope/vim-pathogen)
-- [NERDTree 目录结构](https://github.com/scrooloose/nerdtree)
-- [Command-T 文件跳转](https://github.com/wincent/Command-T.git) (http://www.justinbar.net/post/install-vim-with-ruby-support-and-command-t-plugin-on-ubuntu)
-- [Powerline 状态栏](https://github.com/Lokaltog/vim-powerline)
-- [vim-snipmate 代码片段](https://github.com/garbas/vim-snipmate)
-- [visualmark 标记](http://www.vim.org/scripts/download_script.php?src_id=4700)
-- [taglist 代码结构](https://github.com/vim-scripts/taglist.vim)
-- [YouCompleteMe 补全](https://github.com/Valloric/YouCompleteMe#ubuntu-linux-x64-super-quick-installation)
-
-### pathogen 插件安装
-
-```
-cd ~/.vim/bundle
-git clone git_path_url
-```
-
-## 分屏
-
-### 垂直分屏
-
-`vim -On file1 file2...` 启动时分屏
-
-`o` 是字母o
-
-`n` 是数字，表示分成几屏
-
-`ctrl+w v` 左右分隔当前打开的文件
-
-`:vsp filename` 打开新文件，并左右分隔
-
-### 水平
-
-`vim -on file1 file2...` 启动时分屏
-
-`ctrl+w s` 上下分隔，当前文件
-
-`:sp filename` 打开新文件,上下分隔
-
-### 关闭分屏
-
-`ctrl+w c`
-`ctrl+w q`
-
-### 移动光标
-
-`ctrl+w l [h][k][j][w]`
-
-#### 移动分屏
-
-`ctrl+W L[H][K][J]`
-
-`ctrl+W =` 所有屏都有一样的高度
-
-`ctrl+W +` 增加高度
-
-`ctrl+W -` 减少高度
-
-## 标签
-
-`vim -p filename` 以多标签形式打开文件
-
-### 标签操作
-
-- tabnew filename 增加标签
-- tabe filename 在新标签中打开文件
-- tabc 关闭当前tab
-- tabo 关闭其他所有tab
-- tabs 查看所有打开的tab
-- tabp 或gT 前一个
-- tabn 或gt 后一个
-- tabsplit 打开当前缓冲区文件
-- tabf 搜索当前目录并打开
-- tabdo <command> 多标签页命令
-
-### 移动
-
-- tabp 或gT 前一个
-- tabn 或gt 后一个
-- tabfirst 或tabr 移动到第一个标签
-- tablast 移动到最后一个
-- tabm[n] 移动到第n个标签
-
-## 配置
-
-- vim 默认只能打开10个标签页 `set tabpagemax=15`
-- 标签页在窗口上方是否显示 `set showtabline=[1,2,3]
-- `help tab-page-intro` 帮助
-
-## 快捷命令
-
-- `:n` 跳至下一个文件
-- `:e#` 回到之前编辑文件
-- `:Ex` 目录浏览
-- `:Sex` 水平分隔窗口，并开启目录浏览器
-- `:ls` 显示buffer情况
-- `:shell` 不关闭vim的情况下切换至shell
-- `:exit` 从shell回到vim
-- ZZ 存储离开
-- :r [filename] 读取文档
-- :n1,n2 w [filename] 存储n1,n2间的内容为filename文档
+vim 快捷键整理搜集
 
 ## 基本操作
 
 ### 移动
 
-- C + f 下移一页
-- C + b 上移一页
-- C + d 下移半页
-- C + u 上移半页
-- + 光标下移一列
-- - 光标上移一列
-- n <space> 右移n 个字符
-- 0 [Home] 行首
-- gg == 1G
-- n <Enter> 下移n 行
+#### Movement by screensi
 
-- zt
-- zz
-- zb
+| 命令      | 解释             | 命令     | 解释                |
+|-----------|------------------|----------|---------------------|
+| ctrl + f  | 下移一页         | ctrl + b | 上移一页            |
+| ctrl + d  | 下移半页         | ctrl + u | 上移半页            |
+| ctrl + y  | 下移一行         | ctrl + e | 上移一行            |
+| zt[Enter] | 移动到屏幕顶部   | zz[.]    | 移动到屏幕中间      |
+| zb[-]     | 移动到屏幕底部   | nzz      | 第n行移动到屏幕中间 |
+| H         | 移到屏幕顶部的行 | M        | 移到屏幕中间的行    |
+| L         | 移到屏幕底部的行 | nH       | 移到顶部下n行       |
+| nL        | 移到底部上n行    | nEnter   | 下移n行             |
+| +         | 下移一行         | -        | 上移一行            |
+| ^         | 第一个非空格处   | n\       | 移动到当前行的n列   |
+| n <space> | 右移n 个字符     |
 
-- w [W]
-- b [B]
-- e [E]
-- ge [gE]
+#### Movement by text blocksi
+
+| 命令 | 解释               | 命令 | 解释               |
+|------|--------------------|------|--------------------|
+| w    | 移到下一个单词开头 | b    | 移到上一个单词开头 |
+| e    | 移到单词结尾       | (    | 移到当前句子开头   |
+| )    | 下一行句子开头     | {    | 这一段的开头       |
+| }    | 下一段的开头       | [[   | 这一节的开头       |
+| ]]   | 下一节的开头       | ge [gE] | 移到上一个单词  |
+
+#### Movement by searches for patternsi
+
+| 命令       | 解释                      | 命令       | 解释           |
+|------------|---------------------------|------------|----------------|
+| /          | 往前搜索                  | ?          | 往回搜索       |
+| n [/Enter] | 往前重复搜索              | N [?Enter] | 往回重复搜索   |
+| d/c        | 搜索c字符并删除前面的内容 | fx         | 向后搜索x      |
+| Fx         | 向前搜索x                 | tx         | 向后搜索x      |
+| Tx         | 向前搜索x                 | ;          | 重复上一次搜索 |
+| ,          | 重复搜索，方向相反        |
+
+set nowrapscan 控制搜索是否可以绕回开头
+
+#### Movement by line numberi
+
+| 命令 | 解释           | 命令 | 解释           |
+|------|----------------|------|----------------|
+| G    | 文件底部       | gg   | 文件首行       |
+| nG   | 移到n行        | \`\` | 返回上一个位置 |
+| ''   | 返回上一个位置 |
 
 ### 复制粘贴
 
@@ -158,3 +82,177 @@ line 表示转换当前光标下多少行
 
 - `n1,n2s/word/replace/g` 替换n1 到n2 行之间的word 为replace
 - `1,$s/word/replace/gc` 确认并替换整篇文件的word 为replace
+
+### 全局替换
+
+对目录下所有文件执行替换
+
+#### 标记需要批量编辑的文件
+
+```
+:args ./*.php //D盘a目录下的所有纯文本文件作上标记
+:args ./**/*.php  //包括子目录
+```
+
+#### 执行替换
+
+```
+:argdo %s/^I/    /ge |update
+```
+将所有文件的`abc`替换为`def`字符串
+
+- `%s` 替换操作将施于所有行上
+- `g` 使得每行中的匹配字符串都被替换
+- `e` 避免某些文件中找不到字符串时报错
+- `|` 分隔两个命令
+- `update` 在文件有改变时进行保存
+
+## 组合命令
+
+### 组合命令
+
+| 更改      | 删除      | 复制      | 解释       |
+|-----------|-----------|-----------|------------|
+| cH        | dH        | yH        | 屏幕顶部   |
+| cL        | dL        | yL        | 屏幕底部   |
+| c+        | d+        | y+        | 下一行     |
+| c5        | d5        | y5        | 本行第5列  |
+| 2c)       | 2d)       | 2y)       | 往下第2句  |
+| c{        | d{        | y{        | 上一段     |
+| c/pattern | d/pattern | y/pattern | 模式       |
+| cn        | dn        | yn        | 下一个模式 |
+| cG        | dG        | yG        | 文件结尾   |
+| c13G      | d13G      | d13G      | 第13行     |
+
+### 标记
+
+| 命令 | 解释                   | 命令 | 解释                            |
+|------|------------------------|------|---------------------------------|
+| mx   | 当前位置标记为x        | 'x   | 光标移动到标记x所在行第一个字符 |
+| \`x  | 光标移到标记x的字符    | \`\` | 回到上一个标记或上下文          |
+| ''   | 回到上一个标记或上下文 |
+
+## 多窗口
+
+:[n]split[++opt][+cmd][file]
+
+- n 新窗口显示的行数
+- opt 选项
+- 执行指令
+- 欲编辑文件
+
+### 打开多窗口
+
+| 命令                   | 解释                   | 命令                   | 解释                   |
+|------------------------|------------------------|------------------------|------------------------|
+| vim -On file1 file2... | 启动时分屏             | o                      | 是字母o                |
+| n                      | 是数字，表示分成几屏   | ctrl+w v [vsp]         | 左右分隔当前打开的文件 |
+| :vsp filename          | 打开新文件，并左右分隔 | vim -on file1 file2... | 启动时分屏             |
+| ctrl+w s [sp]          | 上下分隔，当前文件     | :sp filename           | 打开新文件,上下分隔    |
+| new                    | 水平窗口               | vnew                   | 垂直窗口               |
+| sview filename         | 水平窗口打开文件       | sfind filename         | 在路径中查找文件       |
+| ctrl+w c               | 关闭分屏               | ctrl+w q               | 关闭分屏               |
+
+### 切换窗口 
+
+| 命令                  | 解释           | 命令     | 解释           |
+|-----------------------|----------------|----------|----------------|
+| ctrl+w l [h][k][j][w] | 移到下一个窗口 | ctrl+w w | 窗口间切换     |
+| ctrl+w t              | 移到左上角窗口 | ctrl+w b | 移到右下角窗口 |
+| ctrl+w p              | 移到前一个窗口 |
+
+### 移动窗口
+
+| 命令     | 解释               | 命令              | 解释                 |
+|----------|--------------------|-------------------|----------------------|
+| ctrl+w r | 轮换窗口位置       | ctrl+w x          | 交换同行同列窗口位置 |
+| ctrl+w T | 新建窗口到新标签页 | ctrl+W L[H][K][J] | 移动窗口到相应方向   |
+
+### 调整窗口
+
+| 命令                  | 解释                 | 命令                  | 解释             |
+|-----------------------|----------------------|-----------------------|------------------|
+| ctrl+w =              | 所有屏都有一样的高度 | ctrl+w + [:resize +n] | 增加高度         |
+| ctrl+w - [:resize +n] | 减少高度             | :resize n             | 设置窗口水平尺寸 |
+| ctrl+w >              | 增加窗口宽度         | ctrl+w <              | 减少窗口宽度     |
+| ctrl+w _              | 最大窗口高度         | ctrl+w                | 最大窗口宽度     |
+
+## 缓冲区
+
+| 命令                     | 解释                           | 命令     | 解释                 |
+|--------------------------|--------------------------------|----------|----------------------|
+| windo                    | 在每个窗口执行命令             | bufdo    | 在每个缓冲区执行命令 |
+| ls [ls!][files][buffers] | 列出所有缓冲区                 | ball     | 载入所有缓冲区       |
+| badd file                | 将文件加入列表                 | bunload  | 从内存中卸载         |
+| buffer[n] 移到缓冲区n    | bnext[n] 移到接下来的n个缓冲区 | bNext[n] | 移到前n各缓冲区      |
+| bfirst                   | 移到第一个缓冲区               | blast    | 移到最后一个缓冲区   |
+
+## 分页
+
+`vim -p filename` 以多分页形式打开文件
+
+### 分页操作
+
+| tabnew filename 增加分页
+| tabe filename 在新分页中打开文件
+| tabc 关闭当前tab
+| tabo 关闭其他所有tab
+| tabs 查看所有打开的tab
+| tabp 或gT 前一个
+| tabn 或gt 后一个
+| tabsplit 打开当前缓冲区文件
+| tabf 搜索当前目录并打开
+| tabdo <command> 多分页页命令
+
+### 移动
+
+| tabp 或gT 前一个
+| tabn 或gt 后一个
+| tabfirst 或tabr 移动到第一个分页
+| tablast 移动到最后一个
+| tabm[n] 移动到第n个分页
+
+## 配置
+
+| vim 默认只能打开10个分页页 `set tabpagemax=15`
+| 分页页在窗口上方是否显示 `set showtabline=[1,2,3]`
+| `help tab-page-intro` 帮助
+
+## 其他命令
+
+| `:n` 跳至下一个文件
+| `:e#` 回到之前编辑文件
+| `:Ex` 目录浏览
+| `:Sex` 水平分隔窗口，并开启目录浏览器
+| `:ls` 显示buffer情况
+| `:shell` 不关闭vim的情况下切换至shell
+| `:exit` 从shell回到vim
+| ZZ 存储离开
+| :r [filename] 读取文档
+| :n1,n2 w [filename] 存储n1,n2间的内容为filename文档
+
+## 折叠
+
+保存折叠 `:mkview` `:loadview`
+
+折叠方式
+
+- manual
+- indent
+- expr
+- syntax
+- diff
+- marker
+
+| 命令  | 解释                   | 命令  | 解释                   |
+|-------|------------------------|-------|------------------------|
+| zA    | 递归切换折叠状态       | zC    | 递归关闭折叠           |
+| zD    | 递归删除折叠           | zO    | 递归打开折叠           |
+| zE    | 去除所有折叠           | zf    | 创建折叠               |
+| nzF   | 创建涵盖n行的折叠      | zM    | 设置foldlevel 为0      |
+| za    | 切换折叠状态           | zc    | 关闭折叠               |
+| zd    | 删除折叠               | zi    | 切换foldenable选项的值 |
+| zj,zk | 移动光标到下一个折叠值 | zm,zr | 递减或递增foldlevel    |
+| zo    | 打开折叠               |
+
+参考资料: 《学习vi和vim编辑器 第七版》
