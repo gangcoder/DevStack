@@ -27,8 +27,11 @@
 - [http://insights.thoughtworkers.org/author/twinsights/](http://insights.thoughtworkers.org/author/twinsights/)
 - [关于学习](http://liguanglei.name/blogs/)
 - [http://www.guangla.com/](http://www.guangla.com/)
+- [圣殿骑士](http://www.cnblogs.com/KnightsWarrior/)
+- [Coder](http://info.9iphp.com/)
 
 ## 工具
 
 - [Docker](http://dockerpool.com/static/books/docker_practice/index.html)
 - [github](https://github.com/justjavac/free-programming-books-zh_CN)
+- [UML](http://creately.com/)
