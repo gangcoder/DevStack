@@ -50,7 +50,15 @@ function foo(int num)
 
 ### PHP Just In Time Compiler
 
+### ZVAL
 
+### HashTable
+
+### Fast Parameters Parsing APIs
+
+### Faster zend_qsort
+
+### Memory Manager
 
 
 
