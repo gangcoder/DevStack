@@ -29,6 +29,8 @@
 - [http://www.guangla.com/](http://www.guangla.com/)
 - [圣殿骑士](http://www.cnblogs.com/KnightsWarrior/)
 - [Coder](http://info.9iphp.com/)
+- [程序员在囧途](http://www.jtthink.com/)
+- [博文视点](http://blog.csdn.net/broadview2006)
 
 ## 工具
 

@@ -41,6 +41,10 @@
     * [RESTful API](./DevOps/RESTful.md)
     * [Apache vhost](./DevOps/apache.md)
     * [Docker](./DevOps/Docker/docker.md)
+    * [CDN](./DevOps/CDN.md)
+    * [SSH](./DevOps/ssh.md)
+    * [SSL](./DevOps/ssl.md)
+    * [UML](./DevOps/UML.md)
 
 * [Development Enviroment](./DevelopmentEnvironment/developmentenvironment.md)
     * [Editor](./DevelopmentEnvironment/Editor/editor.md)

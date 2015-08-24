@@ -1,5 +1,7 @@
 # RESTful API
 
+[PHP 示例](./request.php)
+
 ## 基本原则
 
 - 当标准合理的时候遵守标准。

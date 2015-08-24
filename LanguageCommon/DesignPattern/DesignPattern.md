@@ -1,9 +1,5 @@
 # 设计模式
 
-设计模式由《设计模式》一书: Erich Gamma、Richard Helm、Ralph Johnson 和 John Vlissides Design引入
-
-旨在更快地设计出更好的软件
-
 ## 工厂模式 Factory
 
 具有创建对象的某些方法
