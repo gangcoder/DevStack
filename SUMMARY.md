@@ -11,6 +11,7 @@
         * [PHP7](./Language/PHP/PHP7/php7.md)
         * [PHP Core](./Language/PHP/core/phpsapi.md)
         * [Garbage Collection](./Language/PHP/GarbageCollection/garbagecollection.md)
+        * [代码执行](./Language/PHP/Internals/用户代码执行.md)
     * [Lua](./Language/Lua/LuaSyntax.md)
         * [Lua RegularExpression](./Language/Lua/LuaRegularExpression.md)
         * [More About Function](./Language/Lua/MoreAboutFunction/Function.md)
