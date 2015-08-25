@@ -10,6 +10,7 @@
         * [Ob](./Language/PHP/Ob/ob.md)
         * [PHP7](./Language/PHP/PHP7/php7.md)
         * [PHP Core](./Language/PHP/core/phpsapi.md)
+        * [Garbage Collection](./Language/PHP/GarbageCollection/garbagecollection.md)
     * [Lua](./Language/Lua/LuaSyntax.md)
         * [Lua RegularExpression](./Language/Lua/LuaRegularExpression.md)
         * [More About Function](./Language/Lua/MoreAboutFunction/Function.md)
