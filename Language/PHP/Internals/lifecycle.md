@@ -53,3 +53,27 @@ Apache一般会采用多进程模式，Apache启动后会fork出多个子进程�
 
 Zend引擎是PHP实现的核心，提供了语言实现上的基础设施。
 例如：PHP的语法实现，脚本的编译运行环境， 扩展机制以及内存管理等
+
+## 脚本执行
+
+动态语言在执行时有解释器实时编译
+
+1. 如上例中， 传递给php程序需要执行的文件， php程序完成基本的准备工作后启动PHP及Zend引擎， 加载注册的扩展模块。
+1. 初始化完成后读取脚本文件，Zend引擎对脚本文件进行词法分析，语法分析。然后编译成opcode执行。 如果安装了apc之类的opcode缓存，编译环节可能会被跳过而直接从缓存中读取opcode执行。
+
+### 词法分析
+
+编程语言的编译器(compiler)或解释器(interpreter)一般包括两大部分：
+
+1. 读取源程序，并处理语言结构。
+1. 处理语言结构并生成目标程序。
+
+Lex和Yacc，用于读取源程序处理语言结构，可以分为两个部分：
+
+1. 将代码切分为一个个的标记(token)
+1. 处理程序的层级结构(hierarchical structure)
+
+Lex(词法分析生成器:A Lexical Analyzer Generator)
+
+Yacc(Yet Another Compiler-Compiler)
+
