@@ -12,6 +12,8 @@
         * [PHP Core](./Language/PHP/core/phpsapi.md)
         * [Garbage Collection](./Language/PHP/GarbageCollection/garbagecollection.md)
         * [PHPInternals](./Language/PHP/Internals/PHPInternals.md)
+            * [lifecycle](./Language/PHP/Internals/chapter2/lifecycle.md)
+            * [code structure](./Language/PHP/Internals/chapter2/SourceStructure.md)
     * [Lua](./Language/Lua/LuaSyntax.md)
         * [Lua RegularExpression](./Language/Lua/LuaRegularExpression.md)
         * [More About Function](./Language/Lua/MoreAboutFunction/Function.md)

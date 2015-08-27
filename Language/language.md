@@ -1,9 +1,3 @@
 # Language
 
-- PHP
-- Lua
-- Shell
-- Python
-- R
-- C
-- JavaScript
+![Language.png](Language.png)
