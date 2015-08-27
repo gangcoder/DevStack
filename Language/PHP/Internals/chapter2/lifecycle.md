@@ -77,3 +77,17 @@ Lex(词法分析生成器:A Lexical Analyzer Generator)
 
 Yacc(Yet Another Compiler-Compiler)
 
+### 语法分析
+
+Lemon语法分析器
+
+### opcode
+
+opcode: 字节码(byte codes)，是Zend虚拟机中的指令
+
+#### opcode_handler_t 函数处理指针查找
+
+1. Debug
+2. 计算
+3. 命名查找
+4. 日志记录

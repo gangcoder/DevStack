@@ -14,6 +14,7 @@
         * [PHPInternals](./Language/PHP/Internals/PHPInternals.md)
             * [lifecycle](./Language/PHP/Internals/chapter2/lifecycle.md)
             * [code structure](./Language/PHP/Internals/chapter2/SourceStructure.md)
+            * [variable structure](./Language/PHP/Internals/chapter3/variablestructure.md)
     * [Lua](./Language/Lua/LuaSyntax.md)
         * [Lua RegularExpression](./Language/Lua/LuaRegularExpression.md)
         * [More About Function](./Language/Lua/MoreAboutFunction/Function.md)
