@@ -1,3 +1,3 @@
 <?php
-$str = '\u5317\u4eac';
-var_dump(json_decode($str, true));
+$result = token_get_all('<?php echo "abc"; ?>');
+var_dump($result);
