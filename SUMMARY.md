@@ -37,7 +37,7 @@
 
 * [DataBase](./DataBase/database.md)
     * [Redis](./DataBase/Redis/redis.md)
-    * [MySQL](./DataBase/Redis/mysql.md)
+    * [MySQL](./DataBase/mysql/mysql.md)
 
 * [Foundation](./Foundation/foundation.md)
     * [Linux](./Foundation/Linux/linux.md)

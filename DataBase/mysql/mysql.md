@@ -1,34 +1,34 @@
 # MySQL
 
-## »ù´¡
+## åŸºç¡€
 
 ### DISTINCT
 
-¹Ø¼ü´Ê DISTINCT ÓÃÓÚ·µ»ØÎ¨Ò»²»Í¬µÄÖµ¡£
+å…³é”®è¯ DISTINCT ç”¨äºŽè¿”å›žå”¯ä¸€ä¸åŒçš„å€¼ã€‚
 
-`SELECT DISTINCT ÁÐÃû³Æ FROM ±íÃû³Æ`
+`SELECT DISTINCT åˆ—åç§° FROM è¡¨åç§°`
 
 ### INSERT INTO
 
-`INSERT INTO ±íÃû³Æ VALUES (Öµ1, Öµ2,....)`
+`INSERT INTO è¡¨åç§° VALUES (å€¼1, å€¼2,....)`
 
-`INSERT INTO table_name (ÁÐ1, ÁÐ2,...) VALUES (Öµ1, Öµ2,....)`
+`INSERT INTO table_name (åˆ—1, åˆ—2,...) VALUES (å€¼1, å€¼2,....)`
 
 ### Update
 
-`UPDATE ±íÃû³Æ SET ÁÐÃû³Æ = ÐÂÖµ WHERE ÁÐÃû³Æ = Ä³Öµ`
+`UPDATE è¡¨åç§° SET åˆ—åç§° = æ–°å€¼ WHERE åˆ—åç§° = æŸå€¼`
 
 ### DELETE
 
-`DELETE FROM ±íÃû³Æ WHERE ÁÐÃû³Æ = Öµ`
+`DELETE FROM è¡¨åç§° WHERE åˆ—åç§° = å€¼`
 
-## ¸ß¼¶
+## é«˜çº§
 
 ### limit
 
-`select ÁÐÃû³Æ from ±íÃû³Æ where Ìõ¼þ limit ×Ö¶ÎÊý`
+`select åˆ—åç§° from è¡¨åç§° where æ¡ä»¶ limit å­—æ®µæ•°`
 
-`select ÁÐÃû³Æ from ±íÃû³Æ where Ìõ¼þ limit ÆðÊ¼Î»ÖÃ, ×Ö¶ÎÊý`
+`select åˆ—åç§° from è¡¨åç§° where æ¡ä»¶ limit èµ·å§‹ä½ç½®, å­—æ®µæ•°`
 
 ### LIKE
 
@@ -38,16 +38,16 @@ FROM table_name
 WHERE column_name LIKE pattern
 ```
 
-|Í¨Åä·û|ÃèÊö |
+|é€šé…ç¬¦|æè¿° |
 |--|--|
-|% | Ìæ´úÒ»¸ö»ò¶à¸ö×Ö·û |
-|_ | ½öÌæ´úÒ»¸ö×Ö·û |
-|[charlist]|  ×Ö·ûÁÐÖÐµÄÈÎºÎµ¥Ò»×Ö·û |
-|[^charlist] »ò [!charlist]|²»ÔÚ×Ö·ûÁÐÖÐµÄÈÎºÎµ¥Ò»×Ö·û|
+|% | æ›¿ä»£ä¸€ä¸ªæˆ–å¤šä¸ªå­—ç¬¦ |
+|_ | ä»…æ›¿ä»£ä¸€ä¸ªå­—ç¬¦ |
+|[charlist]|  å­—ç¬¦åˆ—ä¸­çš„ä»»ä½•å•ä¸€å­—ç¬¦ |
+|[^charlist] æˆ– [!charlist]|ä¸åœ¨å­—ç¬¦åˆ—ä¸­çš„ä»»ä½•å•ä¸€å­—ç¬¦|
 
 ### IN
 
-IN ²Ù×÷·ûÔÊÐíÎÒÃÇÔÚ WHERE ×Ó¾äÖÐ¹æ¶¨¶à¸öÖµ¡£
+IN æ“ä½œç¬¦å…è®¸æˆ‘ä»¬åœ¨ WHERE å­å¥ä¸­è§„å®šå¤šä¸ªå€¼ã€‚
 
 ```
 SELECT column_name(s)
@@ -57,10 +57,10 @@ WHERE column_name IN (value1,value2,...)
 
 ### JOIN
 
-- JOIN: Èç¹û±íÖÐÓÐÖÁÉÙÒ»¸öÆ¥Åä£¬Ôò·µ»ØÐÐ 
-- LEFT JOIN: ¼´Ê¹ÓÒ±íÖÐÃ»ÓÐÆ¥Åä£¬Ò²´Ó×ó±í·µ»ØËùÓÐµÄÐÐ 
-- RIGHT JOIN: ¼´Ê¹×ó±íÖÐÃ»ÓÐÆ¥Åä£¬Ò²´ÓÓÒ±í·µ»ØËùÓÐµÄÐÐ 
-- FULL JOIN: Ö»ÒªÆäÖÐÒ»¸ö±íÖÐ´æÔÚÆ¥Åä£¬¾Í·µ»ØÐÐ 
+- JOIN: å¦‚æžœè¡¨ä¸­æœ‰è‡³å°‘ä¸€ä¸ªåŒ¹é…ï¼Œåˆ™è¿”å›žè¡Œ 
+- LEFT JOIN: å³ä½¿å³è¡¨ä¸­æ²¡æœ‰åŒ¹é…ï¼Œä¹Ÿä»Žå·¦è¡¨è¿”å›žæ‰€æœ‰çš„è¡Œ 
+- RIGHT JOIN: å³ä½¿å·¦è¡¨ä¸­æ²¡æœ‰åŒ¹é…ï¼Œä¹Ÿä»Žå³è¡¨è¿”å›žæ‰€æœ‰çš„è¡Œ 
+- FULL JOIN: åªè¦å…¶ä¸­ä¸€ä¸ªè¡¨ä¸­å­˜åœ¨åŒ¹é…ï¼Œå°±è¿”å›žè¡Œ 
 
 ```
 SELECT Persons.LastName, Persons.FirstName, Orders.OrderNo
@@ -72,7 +72,7 @@ ORDER BY Persons.LastName
 
 ### UNION
 
-ºÏ²¢Á½¸ö»ò¶à¸ö SELECT Óï¾äµÄ½á¹û¼¯
+åˆå¹¶ä¸¤ä¸ªæˆ–å¤šä¸ª SELECT è¯­å¥çš„ç»“æžœé›†
 
 ```
 SELECT column_name(s) FROM table_name1
@@ -82,34 +82,34 @@ SELECT column_name(s) FROM table_name2
 
 ### CREATE
 
-**½¨¿â**
+**å»ºåº“**
 
 `CREATE DATABASE database_name`
 
-**½¨±í**
+**å»ºè¡¨**
 
 ```
-CREATE TABLE ±íÃû³Æ
+CREATE TABLE è¡¨åç§°
 (
-ÁÐÃû³Æ1 Êý¾ÝÀàÐÍ,
-ÁÐÃû³Æ2 Êý¾ÝÀàÐÍ,
-ÁÐÃû³Æ3 Êý¾ÝÀàÐÍ,
+åˆ—åç§°1 æ•°æ®ç±»åž‹,
+åˆ—åç§°2 æ•°æ®ç±»åž‹,
+åˆ—åç§°3 æ•°æ®ç±»åž‹,
 ....
 )
 ```
 
-### Ô¼Êø Constraints
+### çº¦æŸ Constraints
 
 - NOT NULL 
 - UNIQUE 
 - PRIMARY KEY 
 - FOREIGN KEY 
-- CHECK ÓÃÓÚÏÞÖÆÁÐÖÐµÄÖµµÄ·¶Î§
+- CHECK ç”¨äºŽé™åˆ¶åˆ—ä¸­çš„å€¼çš„èŒƒå›´
 - DEFAULT 
 
 ### CREATE INDEX
 
-´´½¨Ò»¸ö¼òµ¥µÄË÷Òý
+åˆ›å»ºä¸€ä¸ªç®€å•çš„ç´¢å¼•
 
 ```
 CREATE INDEX index_name
@@ -122,41 +122,41 @@ ON table_name (column_name)
 
 `DROP INDEX index_name ON table_name`
 
-**É¾³ý±í**
+**åˆ é™¤è¡¨**
 
-`DROP TABLE ±íÃû³Æ`
+`DROP TABLE è¡¨åç§°`
 
-**É¾³ýÊý¾Ý¿â**
+**åˆ é™¤æ•°æ®åº“**
 
-`DROP DATABASE Êý¾Ý¿âÃû³Æ`
+`DROP DATABASE æ•°æ®åº“åç§°`
 
 ### TRUNCATE 
 
-É¾³ý±íÖÐµÄÊý¾Ý
+åˆ é™¤è¡¨ä¸­çš„æ•°æ®
 
-`TRUNCATE TABLE ±íÃû³Æ`
+`TRUNCATE TABLE è¡¨åç§°`
 
 ### ALTER
 
-ÓÃÓÚÔÚÒÑÓÐµÄ±íÖÐÌí¼Ó¡¢ÐÞ¸Ä»òÉ¾³ýÁÐ
+ç”¨äºŽåœ¨å·²æœ‰çš„è¡¨ä¸­æ·»åŠ ã€ä¿®æ”¹æˆ–åˆ é™¤åˆ—
 
 **ALTER TABLE**
 
-Ìí¼ÓÁÐ
+æ·»åŠ åˆ—
 
 ```
 ALTER TABLE table_name
 ADD column_name datatype
 ```
 
-É¾³ýÁÐ
+åˆ é™¤åˆ—
 
 ```
 ALTER TABLE table_name 
 DROP COLUMN column_name
 ```
 
-¸Ä±äÊý¾ÝÀàÐÍ
+æ”¹å˜æ•°æ®ç±»åž‹
 
 ```
 ALTER TABLE table_name
@@ -165,7 +165,7 @@ ALTER COLUMN column_name datatype
 
 ### AUTO_INCREMENT
 
-¿ÉÅäÖÃ×ÔÔö³¤ÆðÊ¼ÖµºÍ¼ä¸ôÖµ
+å¯é…ç½®è‡ªå¢žé•¿èµ·å§‹å€¼å’Œé—´éš”å€¼
 
 ```
 CREATE TABLE Persons
@@ -181,7 +181,7 @@ PRIMARY KEY (P_Id)
 
 ### VIEW
 
-ÊÓÍ¼°üº¬ÐÐºÍÁÐ£¬¾ÍÏñÒ»¸öÕæÊµµÄ±í¡£ÊÓÍ¼ÖÐµÄ×Ö¶Î¾ÍÊÇÀ´×ÔÒ»¸ö»ò¶à¸öÊý¾Ý¿âÖÐµÄÕæÊµµÄ±íÖÐµÄ×Ö¶Î
+è§†å›¾åŒ…å«è¡Œå’Œåˆ—ï¼Œå°±åƒä¸€ä¸ªçœŸå®žçš„è¡¨ã€‚è§†å›¾ä¸­çš„å­—æ®µå°±æ˜¯æ¥è‡ªä¸€ä¸ªæˆ–å¤šä¸ªæ•°æ®åº“ä¸­çš„çœŸå®žçš„è¡¨ä¸­çš„å­—æ®µ
 
 ```
 CREATE VIEW view_name AS
@@ -190,73 +190,73 @@ FROM table_name
 WHERE condition
 ```
 
-ÊÓÍ¼×ÜÊÇÏÔÊ¾×î½üµÄÊý¾Ý¡£Ã¿µ±ÓÃ»§²éÑ¯ÊÓÍ¼Ê±£¬Êý¾Ý¿âÒýÇæÍ¨¹ýÊ¹ÓÃ SQL Óï¾äÀ´ÖØ½¨Êý¾Ý
+è§†å›¾æ€»æ˜¯æ˜¾ç¤ºæœ€è¿‘çš„æ•°æ®ã€‚æ¯å½“ç”¨æˆ·æŸ¥è¯¢è§†å›¾æ—¶ï¼Œæ•°æ®åº“å¼•æ“Žé€šè¿‡ä½¿ç”¨ SQL è¯­å¥æ¥é‡å»ºæ•°æ®
 
 ### NULL
 
-NULL ÖµÊÇÒÅÂ©µÄÎ´ÖªÊý¾Ý
+NULL å€¼æ˜¯é—æ¼çš„æœªçŸ¥æ•°æ®
 
-Ê¹ÓÃ IS NULL ºÍ IS NOT NULL ²Ù×÷·ûÀ´Çø·ÖNULLÖµ
+ä½¿ç”¨ IS NULL å’Œ IS NOT NULL æ“ä½œç¬¦æ¥åŒºåˆ†NULLå€¼
 
-### Êý¾ÝÀàÐÍ
+### æ•°æ®ç±»åž‹
 
 **Text**
 
-- CHAR(size) ±£´æ¹Ì¶¨³¤¶ÈµÄ×Ö·û´®£¨¿É°üº¬×ÖÄ¸¡¢Êý×ÖÒÔ¼°ÌØÊâ×Ö·û£©¡£ÔÚÀ¨ºÅÖÐÖ¸¶¨×Ö·û´®µÄ³¤¶È¡£×î¶à 255 ¸ö×Ö·û¡£ 
-- VARCHAR(size) ±£´æ¿É±ä³¤¶ÈµÄ×Ö·û´®£¨¿É°üº¬×ÖÄ¸¡¢Êý×ÖÒÔ¼°ÌØÊâ×Ö·û£©¡£ÔÚÀ¨ºÅÖÐÖ¸¶¨×Ö·û´®µÄ×î´ó³¤¶È¡£×î¶à 255 ¸ö×Ö·û¡£
-- TINYTEXT ´æ·Å×î´ó³¤¶ÈÎª 255 ¸ö×Ö·ûµÄ×Ö·û´®¡£ 
-- TEXT ´æ·Å×î´ó³¤¶ÈÎª 65,535 ¸ö×Ö·ûµÄ×Ö·û´®¡£ 
-- BLOB ÓÃÓÚ BLOBs (Binary Large OBjects)¡£´æ·Å×î¶à 65,535 ×Ö½ÚµÄÊý¾Ý¡£ 
-- MEDIUMTEXT ´æ·Å×î´ó³¤¶ÈÎª 16,777,215 ¸ö×Ö·ûµÄ×Ö·û´®¡£ 
-- MEDIUMBLOB ÓÃÓÚ BLOBs (Binary Large OBjects)¡£´æ·Å×î¶à 16,777,215 ×Ö½ÚµÄÊý¾Ý¡£ 
-- LONGTEXT ´æ·Å×î´ó³¤¶ÈÎª 4,294,967,295 ¸ö×Ö·ûµÄ×Ö·û´®¡£ 
-- LONGBLOB ÓÃÓÚ BLOBs (Binary Large OBjects)¡£´æ·Å×î¶à 4,294,967,295 ×Ö½ÚµÄÊý¾Ý¡£ 
-- ENUM(x,y,z,etc.) ÔÊÐíÄãÊäÈë¿ÉÄÜÖµµÄÁÐ±í¡£¿ÉÒÔÔÚ ENUM ÁÐ±íÖÐÁÐ³ö×î´ó 65535 ¸öÖµ¡£Èç¹ûÁÐ±íÖÐ²»´æÔÚ²åÈëµÄÖµ£¬Ôò²åÈë¿ÕÖµ¡£
-- SET Óë ENUM ÀàËÆ£¬SET ×î¶àÖ»ÄÜ°üº¬ 64 ¸öÁÐ±íÏî£¬²»¹ý SET ¿É´æ´¢Ò»¸öÒÔÉÏµÄÖµ¡£ 
+- CHAR(size) ä¿å­˜å›ºå®šé•¿åº¦çš„å­—ç¬¦ä¸²ï¼ˆå¯åŒ…å«å­—æ¯ã€æ•°å­—ä»¥åŠç‰¹æ®Šå­—ç¬¦ï¼‰ã€‚åœ¨æ‹¬å·ä¸­æŒ‡å®šå­—ç¬¦ä¸²çš„é•¿åº¦ã€‚æœ€å¤š 255 ä¸ªå­—ç¬¦ã€‚ 
+- VARCHAR(size) ä¿å­˜å¯å˜é•¿åº¦çš„å­—ç¬¦ä¸²ï¼ˆå¯åŒ…å«å­—æ¯ã€æ•°å­—ä»¥åŠç‰¹æ®Šå­—ç¬¦ï¼‰ã€‚åœ¨æ‹¬å·ä¸­æŒ‡å®šå­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦ã€‚æœ€å¤š 255 ä¸ªå­—ç¬¦ã€‚
+- TINYTEXT å­˜æ”¾æœ€å¤§é•¿åº¦ä¸º 255 ä¸ªå­—ç¬¦çš„å­—ç¬¦ä¸²ã€‚ 
+- TEXT å­˜æ”¾æœ€å¤§é•¿åº¦ä¸º 65,535 ä¸ªå­—ç¬¦çš„å­—ç¬¦ä¸²ã€‚ 
+- BLOB ç”¨äºŽ BLOBs (Binary Large OBjects)ã€‚å­˜æ”¾æœ€å¤š 65,535 å­—èŠ‚çš„æ•°æ®ã€‚ 
+- MEDIUMTEXT å­˜æ”¾æœ€å¤§é•¿åº¦ä¸º 16,777,215 ä¸ªå­—ç¬¦çš„å­—ç¬¦ä¸²ã€‚ 
+- MEDIUMBLOB ç”¨äºŽ BLOBs (Binary Large OBjects)ã€‚å­˜æ”¾æœ€å¤š 16,777,215 å­—èŠ‚çš„æ•°æ®ã€‚ 
+- LONGTEXT å­˜æ”¾æœ€å¤§é•¿åº¦ä¸º 4,294,967,295 ä¸ªå­—ç¬¦çš„å­—ç¬¦ä¸²ã€‚ 
+- LONGBLOB ç”¨äºŽ BLOBs (Binary Large OBjects)ã€‚å­˜æ”¾æœ€å¤š 4,294,967,295 å­—èŠ‚çš„æ•°æ®ã€‚ 
+- ENUM(x,y,z,etc.) å…è®¸ä½ è¾“å…¥å¯èƒ½å€¼çš„åˆ—è¡¨ã€‚å¯ä»¥åœ¨ ENUM åˆ—è¡¨ä¸­åˆ—å‡ºæœ€å¤§ 65535 ä¸ªå€¼ã€‚å¦‚æžœåˆ—è¡¨ä¸­ä¸å­˜åœ¨æ’å…¥çš„å€¼ï¼Œåˆ™æ’å…¥ç©ºå€¼ã€‚
+- SET ä¸Ž ENUM ç±»ä¼¼ï¼ŒSET æœ€å¤šåªèƒ½åŒ…å« 64 ä¸ªåˆ—è¡¨é¡¹ï¼Œä¸è¿‡ SET å¯å­˜å‚¨ä¸€ä¸ªä»¥ä¸Šçš„å€¼ã€‚ 
 
 **Number**
 
-- TINYINT(size) -128 µ½ 127 ³£¹æ¡£0 µ½ 255 ÎÞ·ûºÅ*¡£ÔÚÀ¨ºÅÖÐ¹æ¶¨×î´óÎ»Êý¡£ 
-- SMALLINT(size) -32768 µ½ 32767 ³£¹æ¡£0 µ½ 65535 ÎÞ·ûºÅ*¡£ÔÚÀ¨ºÅÖÐ¹æ¶¨×î´óÎ»Êý¡£ 
-- MEDIUMINT(size) -8388608 µ½ 8388607 ÆÕÍ¨¡£0 to 16777215 ÎÞ·ûºÅ*¡£ÔÚÀ¨ºÅÖÐ¹æ¶¨×î´óÎ»Êý¡£ 
-- INT(size) -2147483648 µ½ 2147483647 ³£¹æ¡£0 µ½ 4294967295 ÎÞ·ûºÅ*¡£ÔÚÀ¨ºÅÖÐ¹æ¶¨×î´óÎ»Êý¡£ 
-- BIGINT(size) -9223372036854775808 µ½ 9223372036854775807 ³£¹æ¡£0 µ½ 18446744073709551615 ÎÞ·ûºÅ*¡£ÔÚÀ¨ºÅÖÐ¹æ¶¨×î´óÎ»Êý¡£ 
-- FLOAT(size,d) ´øÓÐ¸¡¶¯Ð¡ÊýµãµÄÐ¡Êý×Ö¡£ÔÚÀ¨ºÅÖÐ¹æ¶¨×î´óÎ»Êý¡£ÔÚ d ²ÎÊýÖÐ¹æ¶¨Ð¡ÊýµãÓÒ²àµÄ×î´óÎ»Êý¡£ 
-- DOUBLE(size,d) ´øÓÐ¸¡¶¯Ð¡ÊýµãµÄ´óÊý×Ö¡£ÔÚÀ¨ºÅÖÐ¹æ¶¨×î´óÎ»Êý¡£ÔÚ d ²ÎÊýÖÐ¹æ¶¨Ð¡ÊýµãÓÒ²àµÄ×î´óÎ»Êý¡£ 
-- DECIMAL(size,d) ×÷Îª×Ö·û´®´æ´¢µÄ DOUBLE ÀàÐÍ£¬ÔÊÐí¹Ì¶¨µÄÐ¡Êýµã¡£ 
+- TINYINT(size) -128 åˆ° 127 å¸¸è§„ã€‚0 åˆ° 255 æ— ç¬¦å·*ã€‚åœ¨æ‹¬å·ä¸­è§„å®šæœ€å¤§ä½æ•°ã€‚ 
+- SMALLINT(size) -32768 åˆ° 32767 å¸¸è§„ã€‚0 åˆ° 65535 æ— ç¬¦å·*ã€‚åœ¨æ‹¬å·ä¸­è§„å®šæœ€å¤§ä½æ•°ã€‚ 
+- MEDIUMINT(size) -8388608 åˆ° 8388607 æ™®é€šã€‚0 to 16777215 æ— ç¬¦å·*ã€‚åœ¨æ‹¬å·ä¸­è§„å®šæœ€å¤§ä½æ•°ã€‚ 
+- INT(size) -2147483648 åˆ° 2147483647 å¸¸è§„ã€‚0 åˆ° 4294967295 æ— ç¬¦å·*ã€‚åœ¨æ‹¬å·ä¸­è§„å®šæœ€å¤§ä½æ•°ã€‚ 
+- BIGINT(size) -9223372036854775808 åˆ° 9223372036854775807 å¸¸è§„ã€‚0 åˆ° 18446744073709551615 æ— ç¬¦å·*ã€‚åœ¨æ‹¬å·ä¸­è§„å®šæœ€å¤§ä½æ•°ã€‚ 
+- FLOAT(size,d) å¸¦æœ‰æµ®åŠ¨å°æ•°ç‚¹çš„å°æ•°å­—ã€‚åœ¨æ‹¬å·ä¸­è§„å®šæœ€å¤§ä½æ•°ã€‚åœ¨ d å‚æ•°ä¸­è§„å®šå°æ•°ç‚¹å³ä¾§çš„æœ€å¤§ä½æ•°ã€‚ 
+- DOUBLE(size,d) å¸¦æœ‰æµ®åŠ¨å°æ•°ç‚¹çš„å¤§æ•°å­—ã€‚åœ¨æ‹¬å·ä¸­è§„å®šæœ€å¤§ä½æ•°ã€‚åœ¨ d å‚æ•°ä¸­è§„å®šå°æ•°ç‚¹å³ä¾§çš„æœ€å¤§ä½æ•°ã€‚ 
+- DECIMAL(size,d) ä½œä¸ºå­—ç¬¦ä¸²å­˜å‚¨çš„ DOUBLE ç±»åž‹ï¼Œå…è®¸å›ºå®šçš„å°æ•°ç‚¹ã€‚ 
 
 **Date**
 
-- DATE() ÈÕÆÚ¡£¸ñÊ½£ºYYYY-MM-DD
-- DATETIME() *ÈÕÆÚºÍÊ±¼äµÄ×éºÏ¡£¸ñÊ½£ºYYYY-MM-DD HH:MM:SS
-- TIMESTAMP() *Ê±¼ä´Á¡£TIMESTAMP ÖµÊ¹ÓÃ Unix ¼ÍÔª('1970-01-01 00:00:00' UTC) ÖÁ½ñµÄÃèÊöÀ´´æ´¢¡£¸ñÊ½£ºYYYY-MM-DD HH:MM:SS
-- TIME() Ê±¼ä¡£¸ñÊ½£ºHH:MM:SS ×¢ÊÍ£ºÖ§³ÖµÄ·¶Î§ÊÇ´Ó '-838:59:59' µ½ '838:59:59'  
-- YEAR() 2 Î»»ò 4 Î»¸ñÊ½µÄÄê¡£
+- DATE() æ—¥æœŸã€‚æ ¼å¼ï¼šYYYY-MM-DD
+- DATETIME() *æ—¥æœŸå’Œæ—¶é—´çš„ç»„åˆã€‚æ ¼å¼ï¼šYYYY-MM-DD HH:MM:SS
+- TIMESTAMP() *æ—¶é—´æˆ³ã€‚TIMESTAMP å€¼ä½¿ç”¨ Unix çºªå…ƒ('1970-01-01 00:00:00' UTC) è‡³ä»Šçš„æè¿°æ¥å­˜å‚¨ã€‚æ ¼å¼ï¼šYYYY-MM-DD HH:MM:SS
+- TIME() æ—¶é—´ã€‚æ ¼å¼ï¼šHH:MM:SS æ³¨é‡Šï¼šæ”¯æŒçš„èŒƒå›´æ˜¯ä»Ž '-838:59:59' åˆ° '838:59:59'  
+- YEAR() 2 ä½æˆ– 4 ä½æ ¼å¼çš„å¹´ã€‚
 
-## º¯Êý
+## å‡½æ•°
 
-- AVG(column) ·µ»ØÄ³ÁÐµÄÆ½¾ùÖµ 
-- COUNT(column) ·µ»ØÄ³ÁÐµÄÐÐÊý£¨²»°üÀ¨ NULL Öµ£© 
-- COUNT(*) ·µ»Ø±»Ñ¡ÐÐÊý 
-- MAX(column) ·µ»ØÄ³ÁÐµÄ×î¸ßÖµ 
-- MIN(column) ·µ»ØÄ³ÁÐµÄ×îµÍÖµ 
-- SUM(column) ·µ»ØÄ³ÁÐµÄ×ÜºÍ 
-- UCASE(c) ½«Ä³¸öÓò×ª»»Îª´óÐ´ 
-- LCASE(c) ½«Ä³¸öÓò×ª»»ÎªÐ¡Ð´ 
-- MID(c,start[,end]) ´ÓÄ³¸öÎÄ±¾ÓòÌáÈ¡×Ö·û 
-- LEN(c) ·µ»ØÄ³¸öÎÄ±¾ÓòµÄ³¤¶È 
-- INSTR(c,char) ·µ»ØÔÚÄ³¸öÎÄ±¾ÓòÖÐÖ¸¶¨×Ö·ûµÄÊýÖµÎ»ÖÃ 
-- LEFT(c,number_of_char) ·µ»ØÄ³¸ö±»ÇëÇóµÄÎÄ±¾ÓòµÄ×ó²à²¿·Ö 
-- RIGHT(c,number_of_char) ·µ»ØÄ³¸ö±»ÇëÇóµÄÎÄ±¾ÓòµÄÓÒ²à²¿·Ö 
-- ROUND(c,decimals) ¶ÔÄ³¸öÊýÖµÓò½øÐÐÖ¸¶¨Ð¡ÊýÎ»ÊýµÄËÄÉáÎåÈë 
-- MOD(x,y) ·µ»Ø³ý·¨²Ù×÷µÄÓàÊý 
-- NOW() ·µ»Øµ±Ç°µÄÏµÍ³ÈÕÆÚ 
-- FORMAT(c,format) ¸Ä±äÄ³¸öÓòµÄÏÔÊ¾·½Ê½ 
-- DATEDIFF(d,date1,date2) ÓÃÓÚÖ´ÐÐÈÕÆÚ¼ÆËã 
+- AVG(column) è¿”å›žæŸåˆ—çš„å¹³å‡å€¼ 
+- COUNT(column) è¿”å›žæŸåˆ—çš„è¡Œæ•°ï¼ˆä¸åŒ…æ‹¬ NULL å€¼ï¼‰ 
+- COUNT(*) è¿”å›žè¢«é€‰è¡Œæ•° 
+- MAX(column) è¿”å›žæŸåˆ—çš„æœ€é«˜å€¼ 
+- MIN(column) è¿”å›žæŸåˆ—çš„æœ€ä½Žå€¼ 
+- SUM(column) è¿”å›žæŸåˆ—çš„æ€»å’Œ 
+- UCASE(c) å°†æŸä¸ªåŸŸè½¬æ¢ä¸ºå¤§å†™ 
+- LCASE(c) å°†æŸä¸ªåŸŸè½¬æ¢ä¸ºå°å†™ 
+- MID(c,start[,end]) ä»ŽæŸä¸ªæ–‡æœ¬åŸŸæå–å­—ç¬¦ 
+- LEN(c) è¿”å›žæŸä¸ªæ–‡æœ¬åŸŸçš„é•¿åº¦ 
+- INSTR(c,char) è¿”å›žåœ¨æŸä¸ªæ–‡æœ¬åŸŸä¸­æŒ‡å®šå­—ç¬¦çš„æ•°å€¼ä½ç½® 
+- LEFT(c,number_of_char) è¿”å›žæŸä¸ªè¢«è¯·æ±‚çš„æ–‡æœ¬åŸŸçš„å·¦ä¾§éƒ¨åˆ† 
+- RIGHT(c,number_of_char) è¿”å›žæŸä¸ªè¢«è¯·æ±‚çš„æ–‡æœ¬åŸŸçš„å³ä¾§éƒ¨åˆ† 
+- ROUND(c,decimals) å¯¹æŸä¸ªæ•°å€¼åŸŸè¿›è¡ŒæŒ‡å®šå°æ•°ä½æ•°çš„å››èˆäº”å…¥ 
+- MOD(x,y) è¿”å›žé™¤æ³•æ“ä½œçš„ä½™æ•° 
+- NOW() è¿”å›žå½“å‰çš„ç³»ç»Ÿæ—¥æœŸ 
+- FORMAT(c,format) æ”¹å˜æŸä¸ªåŸŸçš„æ˜¾ç¤ºæ–¹å¼ 
+- DATEDIFF(d,date1,date2) ç”¨äºŽæ‰§è¡Œæ—¥æœŸè®¡ç®— 
 
 ### GROUP BY
 
-¸ù¾ÝÒ»¸ö»ò¶à¸öÁÐ¶Ô½á¹û¼¯½øÐÐ·Ö×é
+æ ¹æ®ä¸€ä¸ªæˆ–å¤šä¸ªåˆ—å¯¹ç»“æžœé›†è¿›è¡Œåˆ†ç»„
 
 ```
 SELECT column_name, aggregate_function(column_name)
@@ -267,7 +267,7 @@ GROUP BY column_name
 
 ### HAVING
 
-Ôö¼Ó HAVING ×Ó¾äÔ­ÒòÊÇ£¬WHERE ¹Ø¼ü×ÖÎÞ·¨ÓëºÏ¼Æº¯ÊýÒ»ÆðÊ¹ÓÃ
+å¢žåŠ  HAVING å­å¥åŽŸå› æ˜¯ï¼ŒWHERE å…³é”®å­—æ— æ³•ä¸Žåˆè®¡å‡½æ•°ä¸€èµ·ä½¿ç”¨
 
 ```
 SELECT column_name, aggregate_function(column_name)
