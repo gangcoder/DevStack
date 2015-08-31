@@ -1,0 +1,3 @@
+[submodule "Language/Shell/bash-study"]
+	path = Language/Shell/bash-study
+	url = git@github.com:hubeixugang/bash-study.git

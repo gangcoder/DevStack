@@ -59,6 +59,7 @@
         * [NERDTree](./DevelopmentEnvironment/Editor/NERDTree.md)
     * [Git](./DevelopmentEnvironment/Git/Git.md)
         * [GitStrategy](./DevelopmentEnvironment/Git/gitstrategy.md)
+        * [GitSubmodules](./DevelopmentEnvironment/Git/gitsubmodules.md)
     * [gitbook](./DevelopmentEnvironment/gitbook.md)
     * [ab](./DevelopmentEnvironment/ab.md)
     * [curl](./DevelopmentEnvironment/curl.md)
