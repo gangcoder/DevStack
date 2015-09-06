@@ -2,6 +2,8 @@
 
 ## String
 
+### string.byte
+
 ```
 -- string.byte (s [, i [, j]])
 local s = 'abc'
@@ -9,11 +11,15 @@ print(s:byte(1, #s))
 -- 97      98      99
 ```
 
+### string.char
+
 ```
 -- string.char
 print(string.char(97,98,99))
 -- string abc
 ```
+
+### string.dump
 
 ```
 -- string.dump
@@ -26,12 +32,16 @@ world('hello')
 -- hello
 ```
 
+### string.find
+
 ```
 -- string.find 可捕获
 local s = '%a*ohello'
 print(s:find('%a*o', 1, true))
 -- 1       5       hell
 ```
+
+### format
 
 ```
 -- 1. 格式化数字字符串
@@ -66,6 +76,8 @@ print(string.format('%#x', 123)) -- '#'产生0X
 -- sprintf(s, “%u”, &i);
 ```
 
+### string.gmatch
+
 ```
 -- string.gmatch (s, pattern) 迭代匹配
 -- [[返回一个迭代器函数. 每次调用这个函数都会继续以 pattern对 s 做匹配，并返回所有捕获到的值]]
@@ -78,6 +90,8 @@ end
 -- from
 -- Lua
 ```
+
+### string.gsub
 
 ```
 -- string.gsub (s, pattern, repl [, n])
@@ -103,6 +117,8 @@ x = string.gsub("$name-$version.tar.gz", "%$(%w+)", t)
 print(x) -- lua-5.3.tar.gz
 ```
 
+### string.match
+
 ```
 -- string.match (s, pattern [, init])
 -- 字符串 s 中找到第一个能用 pattern 匹配到的部分
@@ -110,17 +126,23 @@ local s = 'Ds123xa'
 print(s:match('%d+', 4)) --23
 ```
 
+### string.rep
+
 ```
 -- string.rep (s, n [, sep])
 -- s 以 sep 连接，重复n次
 print(string.rep('abc', 3, '-')) -- 'abc-abc-abc'
 ```
 
+### string.reverse
+
 ```
 -- string.reverse(s)
 print(string.reverse('hello world'))
 -- dlrow olleh
 ```
+
+### string.sub
 
 ```
 -- string.sub (s, i [, j])
