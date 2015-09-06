@@ -31,6 +31,7 @@
 - [Coder](http://info.9iphp.com/)
 - [程序员在囧途](http://www.jtthink.com/)
 - [博文视点](http://blog.csdn.net/broadview2006)
+- [黄健宏](http://huangz.me/) Redis
 
 ## 工具
 
