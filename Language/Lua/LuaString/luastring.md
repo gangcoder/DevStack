@@ -154,4 +154,5 @@ print(string.reverse('hello world'))
 print(string.gsub("a (enclosed (in) parentheses) line", "%b()", ""))
 -- a line
 ```
+
 常用的这种模式有：`%b()` ，`%b[]`，`%b%{%}` 和 `%b<>`。你也可以使用任何字符作为分隔符

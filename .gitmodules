@@ -1,3 +1,6 @@
 [submodule "Language/Shell/bash-study"]
 	path = Language/Shell/bash-study
 	url = git@github.com:hubeixugang/bash-study.git
+[submodule "DataBase/Redis/RedisNote"]
+	path = DataBase/Redis/RedisNote
+	url = git@github.com:hubeixugang/RedisNote.git
