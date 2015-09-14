@@ -40,6 +40,7 @@
 
 * [DataBase](./DataBase/database.md)
     * [Redis](./DataBase/Redis/redis.md)
+    * [Redis](./DataBase/Redis/RedisNote/RedisReferManual.html)
     * [MySQL](./DataBase/mysql/mysql.md)
 
 * [Foundation](./Foundation/foundation.md)
