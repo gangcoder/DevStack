@@ -31,6 +31,13 @@
 - [Coder](http://info.9iphp.com/)
 - [程序员在囧途](http://www.jtthink.com/)
 - [博文视点](http://blog.csdn.net/broadview2006)
+- [黄健宏](http://huangz.me/) Redis
+- [http://www.yiibai.com/](http://www.yiibai.com/) 基础资料聚集
+- [https://vinta.ws/code/where-to-find-great-content-to-read.html](https://vinta.ws/code/where-to-find-great-content-to-read.html)
+- [洞见](http://insights.thoughtworkers.org/)
+- [http://icodeit.org/](http://icodeit.org/)
+- [jinnianshilongnian](http://jinnianshilongnian.iteye.com/category/333854) 跟我学Nginx+Lua开发
+- [淘宝Nginx开发](http://tengine.taobao.org/book/index.html#id3) 淘宝 Nginx开发
 
 ## 工具
 
