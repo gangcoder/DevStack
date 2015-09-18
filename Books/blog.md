@@ -38,6 +38,12 @@
 - [http://icodeit.org/](http://icodeit.org/)
 - [jinnianshilongnian](http://jinnianshilongnian.iteye.com/category/333854) 跟我学Nginx+Lua开发
 - [淘宝Nginx开发](http://tengine.taobao.org/book/index.html#id3) 淘宝 Nginx开发
+- [Free Data Science Books](http://www.learndatasci.com/free-books/)
+- [netskill 手札](http://netkiller.github.io/)
+- [zhyhooo](http://www.cnblogs.com/naive/) python
+- [初创公司利用Docker持续集成部署](http://dockone.io/article/671) docker
+- [PHP学习路线](http://php.itcast.cn/subject/phpstudypath/index.shtml?1509dzwedmphp)
+- [PHP工作资料](http://bbs.itcast.cn/thread-25872-1-1.html?1509dzwedmphp)
 
 ## 工具
 
