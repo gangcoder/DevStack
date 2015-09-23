@@ -2,10 +2,13 @@
 
 整理收集平时看到的好博主网站
 
+- [电子书交流](http://www.salttiger.com/archives/) *****
+- [51CTO下载](http://down.51cto.com/)
 - [鸟窝](http://colobu.com/)
 - [粉丝日志](http://blog.fens.me/) R 金融
 - [阮一峰](http://www.ruanyifeng.com/blog/)
 - [PSR](http://segmentfault.com/a/1190000002521577)
+- [codepancake](http://codepancake.com/the-best-programming-books-of-september-2015/)
 
 ## 数据库
 
@@ -44,6 +47,8 @@
 - [初创公司利用Docker持续集成部署](http://dockone.io/article/671) docker
 - [PHP学习路线](http://php.itcast.cn/subject/phpstudypath/index.shtml?1509dzwedmphp)
 - [PHP工作资料](http://bbs.itcast.cn/thread-25872-1-1.html?1509dzwedmphp)
+- [PHP 系统编程](http://rango.swoole.com/php%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B)
+- [PHP面试题](http://www.cnblogs.com/zyf-zhaoyafei/p/4828358.html)
 
 ## 工具
 

@@ -39,7 +39,9 @@
 ## Foundation
 
 - Operating System Concepts (9th Edition) 《操作系统概念 (第七版)》
+- [操作系统:精髓与设计原理](http://www.amazon.cn/gp/product/B009P8FGSY?ie=UTF8&isInIframe=0&n=&ref_=dp_proddesc_0&s=books&showDetailProductDesc=1#product-description_feature_div)
 - Operating Systems : Design and Implementation (3rd Edition) 《操作系统：设计及实现 (第三版)》
+- [深入理解计算机系统](http://www.amazon.cn/gp/product/B004BJ18KM?ie=UTF8&isInIframe=0&n=&ref_=dp_proddesc_0&s=books&showDetailProductDesc=1#product-description_feature_div)
 
 [参考](http://blog.csdn.net/pysjp/article/details/3937245)
 
