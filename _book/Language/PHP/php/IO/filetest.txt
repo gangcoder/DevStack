@@ -1,5 +1,0 @@
-stringstringstringstring\n\rstring
-string
-string
-string
-
