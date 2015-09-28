@@ -116,7 +116,7 @@ curl默认的HTTP动词是GET，使用-X参数可以支持其他动词。
 
 `curl --form upload=@localfilename --form press=OK [URL]`
 
-### Referer字段
+### Referer字段 `--referer`
 
 有时你需要在http request头信息中，提供一个referer字段，表示你是从哪里跳转过来的。
 

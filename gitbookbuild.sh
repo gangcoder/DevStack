@@ -7,3 +7,9 @@ echo 'copy done'
 cd /home/vagrant/git/hubeixugang.github.io
 echo 'in blog'
 git add -A
+
+git ci -m "daily update"
+
+git push origin dev
+
+echo 'html push to remote'

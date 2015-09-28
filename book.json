@@ -4,7 +4,7 @@
     "keywords":"git,技术,学习,提升",
     "github":"hubeixugang/Accumulate",
     "githubHost":"https://github.com",
-    "plugins": ["collapsible-menu", "gtoc"],
+    //"plugins": ["collapsible-menu", "gtoc"],
     "links": {
         "contribute": false,
         "sidebar": {
