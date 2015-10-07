@@ -36,6 +36,7 @@
     * [WeChat](./LanguageCommon/WeChat/WeChat.md)
     * [RegularExpression](./LanguageCommon/RegularExpression.md)
     * [sprinf 函数](./LanguageCommon/sprintf.md)
+    * [垃圾回收机制](./LanguageCommon/gc.md)
     * [IBM MQSeries](./LanguageCommon/MQSeries/mqseries.md)
 
 * [DataBase](./DataBase/database.md)
@@ -51,6 +52,8 @@
     * [RESTful API](./DevOps/RESTful.md)
     * [Apache vhost](./DevOps/apache.md)
     * [Docker](./DevOps/Docker/docker.md)
+    * [亿级Web系统搭建](./DevOps/hundredmillionsystem.md)
+    * [节约系统内存和CPU](./DevOps/savememoryandCPU.md)
     * [CDN](./DevOps/CDN.md)
     * [SSH](./DevOps/ssh.md)
     * [SSL](./DevOps/ssl.md)

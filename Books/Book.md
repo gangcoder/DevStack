@@ -39,7 +39,9 @@
 ## Foundation
 
 - Operating System Concepts (9th Edition) 《操作系统概念 (第七版)》
+- [操作系统:精髓与设计原理](http://www.amazon.cn/gp/product/B009P8FGSY?ie=UTF8&isInIframe=0&n=&ref_=dp_proddesc_0&s=books&showDetailProductDesc=1#product-description_feature_div)
 - Operating Systems : Design and Implementation (3rd Edition) 《操作系统：设计及实现 (第三版)》
+- [深入理解计算机系统](http://www.amazon.cn/gp/product/B004BJ18KM?ie=UTF8&isInIframe=0&n=&ref_=dp_proddesc_0&s=books&showDetailProductDesc=1#product-description_feature_div)
 
 [参考](http://blog.csdn.net/pysjp/article/details/3937245)
 
@@ -53,6 +55,26 @@
 讲解PHP 的面向对象，设计模式，正则，网络，WebServier, Smarty,memecache, redis, nginx,调试, 编码规范等方面知识
 因为东西太多，所以可方面内容都不是很深，对于扩展知识面向高级工程师进发打好基础
 - [ ] 《深入PHP面向对象，模式与实践》看它的目录，感觉内容还不错。大量篇幅讲模式，最后讲的是phpDocumentor, PHPUnit, Phing。
+
+### python
+
+- Head First Python
+- [Learn Python The Hard Way](http://learnpythonthehardway.org/book/)
+- 《python基础教程》
+- 《python学习手册》
+- Dive Into Python
+- 《可爱的Python》
+- 《python简明教程》
+- 《深入学习Python程序开发》
+- 《Python高级编程》
+- 《Python编程金典》
+- 《Python核心编程(第二版)》
+- 《python cookbook》
+- 《python源码剖析》
+- 《Python标准库》
+- 官方文档
+
+[知乎推荐](http://www.zhihu.com/question/19593179)
 
 ## LanguageCommon
 

@@ -142,7 +142,7 @@ redis.call("HSET",KEYS[2],link_id,ARGV[1])
 
 执行Redis Lua脚本
 
-`redis-cli EVAL "$(cat luascript_path)”"0`
+`redis-cli EVAL "$(cat luascript_path)"0`
 
 
 ## PHP 操作redis
