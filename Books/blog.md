@@ -10,6 +10,9 @@
 - [PSR](http://segmentfault.com/a/1190000002521577)
 - [codepancake](http://codepancake.com/the-best-programming-books-of-september-2015/)
 - [Online Judge](http://www.smartoj.com/)
+- [jekyii](http://www.cnblogs.com/purediy/archive/2013/03/07/2948892.html)
+- [gem 还源](http://www.bubuko.com/infodetail-739997.html)
+- [jekyll](http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/)
 
 ## 数据库
 

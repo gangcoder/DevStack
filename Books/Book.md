@@ -56,6 +56,26 @@
 因为东西太多，所以可方面内容都不是很深，对于扩展知识面向高级工程师进发打好基础
 - [ ] 《深入PHP面向对象，模式与实践》看它的目录，感觉内容还不错。大量篇幅讲模式，最后讲的是phpDocumentor, PHPUnit, Phing。
 
+### python
+
+- Head First Python
+- [Learn Python The Hard Way](http://learnpythonthehardway.org/book/)
+- 《python基础教程》
+- 《python学习手册》
+- Dive Into Python
+- 《可爱的Python》
+- 《python简明教程》
+- 《深入学习Python程序开发》
+- 《Python高级编程》
+- 《Python编程金典》
+- 《Python核心编程(第二版)》
+- 《python cookbook》
+- 《python源码剖析》
+- 《Python标准库》
+- 官方文档
+
+[知乎推荐](http://www.zhihu.com/question/19593179)
+
 ## LanguageCommon
 
 - [x] 《程序员修炼之道》: 关于编码各方面的经验总结，公认的经典，越早阅读，越能建立好的编码观

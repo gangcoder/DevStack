@@ -36,6 +36,7 @@
     * [WeChat](./LanguageCommon/WeChat/WeChat.md)
     * [RegularExpression](./LanguageCommon/RegularExpression.md)
     * [sprinf 函数](./LanguageCommon/sprintf.md)
+    * [垃圾回收机制](./LanguageCommon/gc.md)
     * [IBM MQSeries](./LanguageCommon/MQSeries/mqseries.md)
 
 * [DataBase](./DataBase/database.md)
