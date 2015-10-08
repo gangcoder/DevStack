@@ -2,7 +2,6 @@
 var_dump($_SERVER["REQUEST_URI"]);
 $paramArr = explode( '/', trim(strtok(urldecode($_SERVER["REQUEST_URI"]),'?'),'/'));
 $paramArr = array_merge($paramArr,$_GET);
-
 var_dump($paramArr);
 // array (size=8)
 //   0 => string 'git' (length=3)

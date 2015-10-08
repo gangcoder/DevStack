@@ -1,0 +1,3 @@
+--for n , v in pairs(_G) do
+    --print(n, v)
+--end

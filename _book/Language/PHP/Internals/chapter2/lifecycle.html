@@ -1,0 +1,1425 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>lifecycle | Outer Brain</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../../../gitbook/plugins/gitbook-plugin-gtoc/gtoc.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../../../Language/PHP/Internals/chapter2/SourceStructure.html" />
+    
+    
+    <link rel="prev" href="../../../../Language/PHP/Internals/PHPInternals.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="1.1.10.1" data-basepath="../../../.." data-revision="Thu Oct 08 2015 15:50:13 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+            
+            <li>
+                <a href="https://github.com/hubeixugang" target="blank" class="custom-link">About Author</a>
+            </li>
+        
+            
+            <li>
+                <a href="https://github.com/hubeixugang/Accumulate/issues" target="blank" class="custom-link">Questions and Issues</a>
+            </li>
+        
+            
+            <li>
+                <a href="https://github.com/hubeixugang/Accumulate" target="blank" class="custom-link">Eidt and Contribute</a>
+            </li>
+        
+        
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../../../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="Language/language.html">
+            
+                
+                    <a href="../../../../Language/language.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Language
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="Language/PHP/php.html">
+            
+                
+                    <a href="../../../../Language/PHP/php.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        PHP
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="Language/PHP/codeSegment/phpcodesegment.html">
+            
+                
+                    <a href="../../../../Language/PHP/codeSegment/phpcodesegment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.1.</b>
+                        
+                        PHP Code Segment
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="Language/PHP/trait/trait.html">
+            
+                
+                    <a href="../../../../Language/PHP/trait/trait.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.2.</b>
+                        
+                        Trait
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="Language/PHP/FileSystem/filesystem.html">
+            
+                
+                    <a href="../../../../Language/PHP/FileSystem/filesystem.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.3.</b>
+                        
+                        File System
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="Language/PHP/Optimization/Optimization.html">
+            
+                
+                    <a href="../../../../Language/PHP/Optimization/Optimization.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.4.</b>
+                        
+                        Optimization
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="Language/PHP/Refer/Refer.html">
+            
+                
+                    <a href="../../../../Language/PHP/Refer/Refer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.5.</b>
+                        
+                        Refer
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="Language/PHP/Ob/ob.html">
+            
+                
+                    <a href="../../../../Language/PHP/Ob/ob.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.6.</b>
+                        
+                        Ob
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="Language/PHP/PHP7/php7.html">
+            
+                
+                    <a href="../../../../Language/PHP/PHP7/php7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.7.</b>
+                        
+                        PHP7
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="Language/PHP/core/phpsapi.html">
+            
+                
+                    <a href="../../../../Language/PHP/core/phpsapi.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.8.</b>
+                        
+                        PHP Core
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="Language/PHP/GarbageCollection/garbagecollection.html">
+            
+                
+                    <a href="../../../../Language/PHP/GarbageCollection/garbagecollection.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.9.</b>
+                        
+                        Garbage Collection
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="Language/PHP/Internals/PHPInternals.html">
+            
+                
+                    <a href="../../../../Language/PHP/Internals/PHPInternals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.10.</b>
+                        
+                        PHPInternals
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1.10.1" data-path="Language/PHP/Internals/chapter2/lifecycle.html">
+            
+                
+                    <a href="../../../../Language/PHP/Internals/chapter2/lifecycle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.10.1.</b>
+                        
+                        lifecycle
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10.2" data-path="Language/PHP/Internals/chapter2/SourceStructure.html">
+            
+                
+                    <a href="../../../../Language/PHP/Internals/chapter2/SourceStructure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.10.2.</b>
+                        
+                        code structure
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10.3" data-path="Language/PHP/Internals/chapter3/variablestructure.html">
+            
+                
+                    <a href="../../../../Language/PHP/Internals/chapter3/variablestructure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.10.3.</b>
+                        
+                        variable structure
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Language/Lua/LuaSyntax.html">
+            
+                
+                    <a href="../../../../Language/Lua/LuaSyntax.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Lua
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Language/Lua/MoreAboutFunction/Function.html">
+            
+                
+                    <a href="../../../../Language/Lua/MoreAboutFunction/Function.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.1.</b>
+                        
+                        More About Function
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Language/Lua/LuaCodeSegment/luacodelibrary.html">
+            
+                
+                    <a href="../../../../Language/Lua/LuaCodeSegment/luacodelibrary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.2.</b>
+                        
+                        Lua Library
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="Language/Lua/Require/require.html">
+            
+                
+                    <a href="../../../../Language/Lua/Require/require.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.3.</b>
+                        
+                        Lua Module
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="Language/Lua/DataStructures/datastructures.html">
+            
+                
+                    <a href="../../../../Language/Lua/DataStructures/datastructures.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.4.</b>
+                        
+                        Lua Data Structures
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="Language/Lua/LuaString/LuaRegularExpression.html">
+            
+                
+                    <a href="../../../../Language/Lua/LuaString/LuaRegularExpression.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.5.</b>
+                        
+                        Lua RegularExpression
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="Language/Lua/LuaString/luastring.html">
+            
+                
+                    <a href="../../../../Language/Lua/LuaString/luastring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.6.</b>
+                        
+                        Lua String
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="Language/Lua/MetaTable/metatable.html">
+            
+                
+                    <a href="../../../../Language/Lua/MetaTable/metatable.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.7.</b>
+                        
+                        Lua String
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Language/Shell/shell.html">
+            
+                
+                    <a href="../../../../Language/Shell/shell.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Shell
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Language/Shell/syntax.html">
+            
+                
+                    <a href="../../../../Language/Shell/syntax.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.1.</b>
+                        
+                        shell syntax
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Language/Python/python.html">
+            
+                
+                    <a href="../../../../Language/Python/python.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Python
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="LanguageCommon/languagecommon.html">
+            
+                
+                    <a href="../../../../LanguageCommon/languagecommon.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Language Common
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="LanguageCommon/Structure/structure.html">
+            
+                
+                    <a href="../../../../LanguageCommon/Structure/structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Code Structure
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="LanguageCommon/codestyle.html">
+            
+                
+                    <a href="../../../../LanguageCommon/codestyle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Code Style
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="LanguageCommon/DesignPattern/DesignPattern.html">
+            
+                
+                    <a href="../../../../LanguageCommon/DesignPattern/DesignPattern.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        DesignPattern
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="LanguageCommon/DesignPattern/patternsegment.html">
+            
+            <span><b>2.3.1.</b> DesignPattern</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="LanguageCommon/NameSpace/namespace.html">
+            
+                
+                    <a href="../../../../LanguageCommon/NameSpace/namespace.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        NameSpace
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="LanguageCommon/WeChat/WeChat.html">
+            
+                
+                    <a href="../../../../LanguageCommon/WeChat/WeChat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        WeChat
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="LanguageCommon/RegularExpression.html">
+            
+                
+                    <a href="../../../../LanguageCommon/RegularExpression.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        RegularExpression
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="LanguageCommon/sprintf.html">
+            
+                
+                    <a href="../../../../LanguageCommon/sprintf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        sprinf 函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="LanguageCommon/gc.html">
+            
+                
+                    <a href="../../../../LanguageCommon/gc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        垃圾回收机制
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="LanguageCommon/MQSeries/mqseries.html">
+            
+                
+                    <a href="../../../../LanguageCommon/MQSeries/mqseries.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        IBM MQSeries
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="DataBase/database.html">
+            
+                
+                    <a href="../../../../DataBase/database.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        DataBase
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="DataBase/Redis/redis.html">
+            
+                
+                    <a href="../../../../DataBase/Redis/redis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Redis
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="DataBase/Redis/RedisNote/RedisReferManual.html">
+            
+            <span><b>3.2.</b> Redis</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="DataBase/mysql/mysql.html">
+            
+                
+                    <a href="../../../../DataBase/mysql/mysql.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        MySQL
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="Foundation/foundation.html">
+            
+                
+                    <a href="../../../../Foundation/foundation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Foundation
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="Foundation/Linux/linux.html">
+            
+                
+                    <a href="../../../../Foundation/Linux/linux.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Linux
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="Foundation/Arithmetic/tree.html">
+            
+                
+                    <a href="../../../../Foundation/Arithmetic/tree.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Arithmetic
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="Foundation/Arithmetic/arithmetic.html">
+            
+                
+                    <a href="../../../../Foundation/Arithmetic/arithmetic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        算法与数据结构
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="DevOps/devops.html">
+            
+                
+                    <a href="../../../../DevOps/devops.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        DevOps
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="DevOps/RESTful.html">
+            
+                
+                    <a href="../../../../DevOps/RESTful.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        RESTful API
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="DevOps/apache.html">
+            
+                
+                    <a href="../../../../DevOps/apache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Apache vhost
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="DevOps/Docker/docker.html">
+            
+                
+                    <a href="../../../../DevOps/Docker/docker.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Docker
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="DevOps/hundredmillionsystem.html">
+            
+                
+                    <a href="../../../../DevOps/hundredmillionsystem.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        亿级Web系统搭建
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="DevOps/savememoryandCPU.html">
+            
+                
+                    <a href="../../../../DevOps/savememoryandCPU.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        节约系统内存和CPU
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="DevOps/CDN.html">
+            
+                
+                    <a href="../../../../DevOps/CDN.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        CDN
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="DevOps/ssh.html">
+            
+                
+                    <a href="../../../../DevOps/ssh.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        SSH
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="DevOps/ssl.html">
+            
+                
+                    <a href="../../../../DevOps/ssl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        SSL
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="DevOps/UML.html">
+            
+                
+                    <a href="../../../../DevOps/UML.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        UML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="DevelopmentEnvironment/developmentenvironment.html">
+            
+                
+                    <a href="../../../../DevelopmentEnvironment/developmentenvironment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Development Enviroment
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="DevelopmentEnvironment/Editor/editor.html">
+            
+                
+                    <a href="../../../../DevelopmentEnvironment/Editor/editor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Editor
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="DevelopmentEnvironment/Editor/tmux.html">
+            
+                
+                    <a href="../../../../DevelopmentEnvironment/Editor/tmux.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.1.</b>
+                        
+                        Tmux
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="DevelopmentEnvironment/Editor/VIM.html">
+            
+                
+                    <a href="../../../../DevelopmentEnvironment/Editor/VIM.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.</b>
+                        
+                        VIM
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="DevelopmentEnvironment/Editor/NERDTree.html">
+            
+                
+                    <a href="../../../../DevelopmentEnvironment/Editor/NERDTree.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.3.</b>
+                        
+                        NERDTree
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="DevelopmentEnvironment/Git/Git.html">
+            
+                
+                    <a href="../../../../DevelopmentEnvironment/Git/Git.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Git
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="DevelopmentEnvironment/Git/gitstrategy.html">
+            
+                
+                    <a href="../../../../DevelopmentEnvironment/Git/gitstrategy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.1.</b>
+                        
+                        GitStrategy
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="DevelopmentEnvironment/Git/gitsubmodules.html">
+            
+                
+                    <a href="../../../../DevelopmentEnvironment/Git/gitsubmodules.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.2.</b>
+                        
+                        GitSubmodules
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="DevelopmentEnvironment/gitbook.html">
+            
+                
+                    <a href="../../../../DevelopmentEnvironment/gitbook.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        gitbook
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="DevelopmentEnvironment/ab.html">
+            
+                
+                    <a href="../../../../DevelopmentEnvironment/ab.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        ab
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="DevelopmentEnvironment/curl.html">
+            
+                
+                    <a href="../../../../DevelopmentEnvironment/curl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        curl
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="Books/Book.html">
+            
+                
+                    <a href="../../../../Books/Book.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Book List
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="Books/blog.html">
+            
+                
+                    <a href="../../../../Books/blog.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Master`s Blog
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="Books/resource.html">
+            
+                
+                    <a href="../../../../Books/resource.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Resource
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="Books/Engineer.html">
+            
+                
+                    <a href="../../../../Books/Engineer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Engineer
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../../" >Outer Brain</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E7%94%A8%E6%88%B7%E4%BB%A3%E7%A0%81%E7%9A%84%E6%89%A7%E8%A1%8C">&#x7528;&#x6237;&#x4EE3;&#x7801;&#x7684;&#x6267;&#x884C;</h1>
+<p>PHP&#x5185;&#x6838;&#x7684;&#x5B9E;&#x73B0;&#x4E0E;&#x4E16;&#x754C;&#x4E0A;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x7684;&#x7A0B;&#x5E8F;&#x4E00;&#x6837;&#xFF0C;&#x63A5;&#x6536;&#x8F93;&#x5165;&#x6570;&#x636E;&#xFF0C; &#x505A;&#x76F8;&#x5E94;&#x5904;&#x7406;&#x7136;&#x540E;&#x8F93;&#x51FA;&#xFF08;&#x8FD4;&#x56DE;&#xFF09;&#x7ED3;&#x679C;</p>
+<p>&#x8F93;&#x5165;PHP&#x4EE3;&#x7801;&#xFF0C;&#x5185;&#x6838;&#x5BF9;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x89E3;&#x91CA;&#x548C;&#x8FD0;&#x7B97;&#xFF0C;&#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x7684;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;</p>
+<p><img src="02-00-php-inernal.png" alt="02-00-php-inernal.png"></p>
+<h2 id="%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%92%8Czend%E5%BC%95%E6%93%8E">&#x751F;&#x547D;&#x5468;&#x671F;&#x548C;Zend&#x5F15;&#x64CE;</h2>
+<p><a href="../core/phpsapi.md">SAPI</a></p>
+<h3 id="%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%BC%80%E5%A7%8B%E5%92%8C%E7%BB%93%E6%9D%9F">&#x751F;&#x547D;&#x5468;&#x671F;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;</h3>
+<h4 id="%E5%BC%80%E5%A7%8B%E9%98%B6%E6%AE%B5">&#x5F00;&#x59CB;&#x9636;&#x6BB5;</h4>
+<ol>
+<li><strong>&#x7B2C;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;</strong>&#xFF1A;&#x6A21;&#x5757;&#x521D;&#x59CB;&#x5316;&#x9636;&#x6BB5;&#xFF08;MINIT&#xFF09;&#xFF0C;&#x53EA;&#x6267;&#x884C;&#x4E00;&#x6B21; &#x901A;&#x8FC7;&#x6A21;&#x5757;&#x7684;MINIT&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x521D;&#x59CB;&#x5316;&#x5DE5;&#x4F5C; </li>
+<li><strong>&#x7B2C;&#x4E8C;&#x4E2A;&#x8FC7;&#x7A0B;</strong>&#xFF1A;&#x6A21;&#x5757;&#x6FC0;&#x6D3B;&#x9636;&#x6BB5;&#xFF08;RINIT&#xFF09;</li>
+<li>&#x8BF7;&#x6C42;&#x5230;&#x8FBE;&#xFF0C;PHP&#x521D;&#x59CB;&#x5316;&#x6267;&#x884C;&#x811A;&#x672C;&#x7684;&#x57FA;&#x672C;&#x73AF;&#x5883;(&#x53D8;&#x91CF;&#x7B26;&#x53F7;&#x8868;&#xFF0C;&#x51FD;&#x6570;&#x4E0E;&#x7C7B;&#x7684;&#x7B26;&#x53F7;&#x8868;)</li>
+</ol>
+<h4 id="%E7%BB%93%E6%9D%9F%E9%98%B6%E6%AE%B5">&#x7ED3;&#x675F;&#x9636;&#x6BB5;</h4>
+<p>&#x811A;&#x672C;&#x6267;&#x884C;&#x5230;&#x672B;&#x5C3E;&#x6216;&#x8005;&#x901A;&#x8FC7;&#x8C03;&#x7528;exit()&#x6216;die()&#x51FD;&#x6570;</p>
+<ol>
+<li>&#x8BF7;&#x6C42;&#x7ED3;&#x675F;&#x540E;&#x505C;&#x7528;&#x6A21;&#x5757;(RSHUTDOWN&#xFF0C;&#x5BF9;&#x5E94;RINIT)</li>
+<li>&#x5728;SAPI&#x751F;&#x547D;&#x5468;&#x671F;&#x7ED3;&#x675F;&#xFF08;Web&#x670D;&#x52A1;&#x5668;&#x9000;&#x51FA;&#x6216;&#x8005;&#x547D;&#x4EE4;&#x884C;&#x811A;&#x672C;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x9000;&#x51FA;&#xFF09;&#x65F6;&#x5173;&#x95ED;&#x6A21;&#x5757;(MSHUTDOWN&#xFF0C;&#x5BF9;&#x5E94;MINIT)</li>
+</ol>
+<h3 id="%E5%8D%95%E8%BF%9B%E7%A8%8B">&#x5355;&#x8FDB;&#x7A0B;</h3>
+<p><img src="02-01-01-cgi-lift-cycle.png" alt="02-01-01-cgi-lift-cycle.png"></p>
+<ul>
+<li>&#x521D;&#x59CB;&#x5316;&#x82E5;&#x5E72;&#x5168;&#x5C40;&#x53D8;&#x91CF;</li>
+<li>&#x521D;&#x59CB;&#x5316;&#x82E5;&#x5E72;&#x5E38;&#x91CF;</li>
+<li>&#x521D;&#x59CB;&#x5316;Zend&#x5F15;&#x64CE;&#x548C;&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;</li>
+<li>&#x89E3;&#x6790;PHP.ini</li>
+<li>&#x5168;&#x5C40;&#x64CD;&#x4F5C;&#x51FD;&#x6570;&#x7684;&#x521D;&#x59CB;&#x5316;</li>
+<li>&#x521D;&#x59CB;&#x5316;&#x9759;&#x6001;&#x6784;&#x5EFA;&#x6A21;&#x5757;&#x548C;&#x5171;&#x4EAB;&#x6A21;&#x5757;(MINIT)</li>
+<li>&#x7981;&#x7528;&#x51FD;&#x6570;&#x548C;&#x7C7B;</li>
+<li>&#x6FC0;&#x6D3B;Zend&#x5F15;&#x64CE;</li>
+<li>&#x6FC0;&#x6D3B;SAPI</li>
+<li>&#x73AF;&#x5883;&#x521D;&#x59CB;&#x5316;(&#x670D;&#x52A1;&#x5668;&#x73AF;&#x5883;&#xFF0C;&#x8BF7;&#x6C42;&#x6570;&#x636E;&#x73AF;&#x5883;)</li>
+<li>&#x6A21;&#x5757;&#x8BF7;&#x6C42;&#x521D;&#x59CB;&#x5316;</li>
+<li>flush</li>
+<li>&#x5173;&#x95ED;Zend&#x5F15;&#x64CE;</li>
+</ul>
+<h3 id="%E5%A4%9A%E8%BF%9B%E7%A8%8B">&#x591A;&#x8FDB;&#x7A0B;</h3>
+<p>Apache&#x4E00;&#x822C;&#x4F1A;&#x91C7;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#x6A21;&#x5F0F;&#xFF0C;Apache&#x542F;&#x52A8;&#x540E;&#x4F1A;fork&#x51FA;&#x591A;&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;
+&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x72EC;&#x7ACB;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B50;&#x8FDB;&#x7A0B;&#x90FD;&#x4F1A;&#x7ECF;&#x8FC7;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x73AF;&#x8282;&#xFF0C;
+&#x4E0D;&#x8FC7;&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x5F00;&#x59CB;&#x9636;&#x6BB5;&#x53EA;&#x5728;&#x8FDB;&#x7A0B;fork&#x51FA;&#x6765;&#x4EE5;&#x6765;&#x540E;&#x8FDB;&#x884C;&#xFF0C;&#x5728;&#x6574;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x5185;&#x53EF;&#x80FD;&#x4F1A;&#x5904;&#x7406;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;&#x3002;</p>
+<h2 id="zend%E5%BC%95%E6%93%8E">Zend&#x5F15;&#x64CE;</h2>
+<p>Zend&#x5F15;&#x64CE;&#x662F;PHP&#x5B9E;&#x73B0;&#x7684;&#x6838;&#x5FC3;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#x4E0A;&#x7684;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x3002;
+&#x4F8B;&#x5982;&#xFF1A;PHP&#x7684;&#x8BED;&#x6CD5;&#x5B9E;&#x73B0;&#xFF0C;&#x811A;&#x672C;&#x7684;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#xFF0C; &#x6269;&#x5C55;&#x673A;&#x5236;&#x4EE5;&#x53CA;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x7B49;</p>
+<h2 id="%E8%84%9A%E6%9C%AC%E6%89%A7%E8%A1%8C">&#x811A;&#x672C;&#x6267;&#x884C;</h2>
+<p>&#x52A8;&#x6001;&#x8BED;&#x8A00;&#x5728;&#x6267;&#x884C;&#x65F6;&#x6709;&#x89E3;&#x91CA;&#x5668;&#x5B9E;&#x65F6;&#x7F16;&#x8BD1;</p>
+<ol>
+<li>&#x5982;&#x4E0A;&#x4F8B;&#x4E2D;&#xFF0C; &#x4F20;&#x9012;&#x7ED9;php&#x7A0B;&#x5E8F;&#x9700;&#x8981;&#x6267;&#x884C;&#x7684;&#x6587;&#x4EF6;&#xFF0C; php&#x7A0B;&#x5E8F;&#x5B8C;&#x6210;&#x57FA;&#x672C;&#x7684;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#x540E;&#x542F;&#x52A8;PHP&#x53CA;Zend&#x5F15;&#x64CE;&#xFF0C; &#x52A0;&#x8F7D;&#x6CE8;&#x518C;&#x7684;&#x6269;&#x5C55;&#x6A21;&#x5757;&#x3002;</li>
+<li>&#x521D;&#x59CB;&#x5316;&#x5B8C;&#x6210;&#x540E;&#x8BFB;&#x53D6;&#x811A;&#x672C;&#x6587;&#x4EF6;&#xFF0C;Zend&#x5F15;&#x64CE;&#x5BF9;&#x811A;&#x672C;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#xFF0C;&#x8BED;&#x6CD5;&#x5206;&#x6790;&#x3002;&#x7136;&#x540E;&#x7F16;&#x8BD1;&#x6210;opcode&#x6267;&#x884C;&#x3002; &#x5982;&#x679C;&#x5B89;&#x88C5;&#x4E86;apc&#x4E4B;&#x7C7B;&#x7684;opcode&#x7F13;&#x5B58;&#xFF0C;&#x7F16;&#x8BD1;&#x73AF;&#x8282;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x8DF3;&#x8FC7;&#x800C;&#x76F4;&#x63A5;&#x4ECE;&#x7F13;&#x5B58;&#x4E2D;&#x8BFB;&#x53D6;opcode&#x6267;&#x884C;&#x3002;</li>
+</ol>
+<h3 id="%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90">&#x8BCD;&#x6CD5;&#x5206;&#x6790;</h3>
+<p>&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x7684;&#x7F16;&#x8BD1;&#x5668;(compiler)&#x6216;&#x89E3;&#x91CA;&#x5668;(interpreter)&#x4E00;&#x822C;&#x5305;&#x62EC;&#x4E24;&#x5927;&#x90E8;&#x5206;&#xFF1A;</p>
+<ol>
+<li>&#x8BFB;&#x53D6;&#x6E90;&#x7A0B;&#x5E8F;&#xFF0C;&#x5E76;&#x5904;&#x7406;&#x8BED;&#x8A00;&#x7ED3;&#x6784;&#x3002;</li>
+<li>&#x5904;&#x7406;&#x8BED;&#x8A00;&#x7ED3;&#x6784;&#x5E76;&#x751F;&#x6210;&#x76EE;&#x6807;&#x7A0B;&#x5E8F;&#x3002;</li>
+</ol>
+<p>Lex&#x548C;Yacc&#xFF0C;&#x7528;&#x4E8E;&#x8BFB;&#x53D6;&#x6E90;&#x7A0B;&#x5E8F;&#x5904;&#x7406;&#x8BED;&#x8A00;&#x7ED3;&#x6784;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#xFF1A;</p>
+<ol>
+<li>&#x5C06;&#x4EE3;&#x7801;&#x5207;&#x5206;&#x4E3A;&#x4E00;&#x4E2A;&#x4E2A;&#x7684;&#x6807;&#x8BB0;(token)</li>
+<li>&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x7684;&#x5C42;&#x7EA7;&#x7ED3;&#x6784;(hierarchical structure)</li>
+</ol>
+<p>Lex(&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x751F;&#x6210;&#x5668;:A Lexical Analyzer Generator)</p>
+<p>Yacc(Yet Another Compiler-Compiler)</p>
+<h3 id="%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90">&#x8BED;&#x6CD5;&#x5206;&#x6790;</h3>
+<p>Lemon&#x8BED;&#x6CD5;&#x5206;&#x6790;&#x5668;</p>
+<h3 id="opcode">opcode</h3>
+<p>opcode: &#x5B57;&#x8282;&#x7801;(byte codes)&#xFF0C;&#x662F;Zend&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x7684;&#x6307;&#x4EE4;</p>
+<h4 id="opcode-handler-t-%E5%87%BD%E6%95%B0%E5%A4%84%E7%90%86%E6%8C%87%E9%92%88%E6%9F%A5%E6%89%BE">opcode_handler_t &#x51FD;&#x6570;&#x5904;&#x7406;&#x6307;&#x9488;&#x67E5;&#x627E;</h4>
+<ol>
+<li>Debug</li>
+<li>&#x8BA1;&#x7B97;</li>
+<li>&#x547D;&#x540D;&#x67E5;&#x627E;</li>
+<li>&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;</li>
+</ol>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../../../Language/PHP/Internals/PHPInternals.html" class="navigation navigation-prev " aria-label="Previous page: PHPInternals"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../../../Language/PHP/Internals/chapter2/SourceStructure.html" class="navigation navigation-next " aria-label="Next page: code structure"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../../../gitbook/app.js"></script>
+
+    
+    <script src="../../../../gitbook/plugins/gitbook-plugin-collapsible-menu/plugin.js"></script>
+    
+
+    
+    <script src="../../../../gitbook/plugins/gitbook-plugin-gtoc/gtoc.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
