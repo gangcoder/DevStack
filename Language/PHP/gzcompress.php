@@ -1,9 +1,9 @@
+<?php
 /**
  * 使用gzcompress()来压缩数据
  *
  * @url http://net.tutsplus.com/tutorials/php/9-useful-php-functions-and-features-you-need-to-know/
  */
-<?php
 $string =
 "Lorem ipsum dolor sit amet, consectetur
 adipiscing elit. Nunc ut elit id mi ultricies
@@ -28,7 +28,7 @@ echo "Original size: ". strlen($string)."\n";
 /* prints
 Original size: 800
 */
-
+echo $compressed; 
 echo "Compressed size: ". strlen($compressed)."\n";
 /* prints
 Compressed size: 418

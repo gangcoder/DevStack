@@ -1,10 +1,10 @@
-local key = {}
+local key = {} -- 提供一个特殊的键
 local mt = {__index = function(t) return t[key] end}
 function setDefault(t, d)
     t[key] = d
-    --for k, v in pairs(t) do
-        --print(k, v)
-    --end
+    -- for k, v in pairs(t) do
+        -- print(k, v)
+    -- end
     setmetatable(t, mt)
 end
 
