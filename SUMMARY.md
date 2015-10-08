@@ -47,6 +47,7 @@
 * [Foundation](./Foundation/foundation.md)
     * [Linux](./Foundation/Linux/linux.md)
     * [Arithmetic](./Foundation/Arithmetic/tree.md)
+    * [算法与数据结构](./Foundation/Arithmetic/arithmetic.md)
 
 * [DevOps](./DevOps/devops.md)
     * [RESTful API](./DevOps/RESTful.md)
