@@ -13,6 +13,7 @@
 - [jekyii](http://www.cnblogs.com/purediy/archive/2013/03/07/2948892.html)
 - [gem 还源](http://www.bubuko.com/infodetail-739997.html)
 - [jekyll](http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/)
+- [GitHub秘籍](https://snowdream86.gitbooks.io/github-cheat-sheet/content/zh/index.html)
 
 ## 数据库
 
