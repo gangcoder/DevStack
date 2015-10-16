@@ -14,6 +14,9 @@
 - [gem 还源](http://www.bubuko.com/infodetail-739997.html)
 - [jekyll](http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/)
 - [GitHub秘籍](https://snowdream86.gitbooks.io/github-cheat-sheet/content/zh/index.html)
+- [ProGit中文第二版](http://git-scm.com/book/zh/v2)
+- [learnvimscriptthehardway](http://learnvimscriptthehardway.stevelosh.com/)
+- [算法学习](http://mp.weixin.qq.com/s?__biz=MzA3NDM1NjUwMQ==&mid=209857692&idx=1&sn=ebb4dd27bf3aa6d9682bc486f861020b&scene=23&srcid=10127ONo39i7FkXF8EoVgZ4L#rd)
 
 ## 数据库
 
@@ -54,6 +57,7 @@
 - [PHP工作资料](http://bbs.itcast.cn/thread-25872-1-1.html?1509dzwedmphp)
 - [PHP 系统编程](http://rango.swoole.com/php%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B)
 - [PHP面试题](http://www.cnblogs.com/zyf-zhaoyafei/p/4828358.html)
+- [老高的技术博客](http://www.phpgao.com/html_tag_clear.html)
 
 ## 工具
 
