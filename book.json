@@ -2,9 +2,8 @@
     "title":"Outer Brain",
     "description":"blog of xg",
     "keywords":"git,技术,学习,提升",
-    "github":"hubeixugang/Accumulate",
-    "githubHost":"https://github.com",
-    "plugins": ["collapsible-menu", "gtoc"],
+    "github":"ironxu/Accumulate",
+    "githubHost":"https://github.com/ironxu",
     "links": {
         "contribute": false,
         "sidebar": {

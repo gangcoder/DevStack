@@ -73,7 +73,8 @@
     * [ab](./DevelopmentEnvironment/ab.md)
     * [curl](./DevelopmentEnvironment/curl.md)
     * [virtualbox](./DevelopmentEnvironment/virtualbox.md)
-    * [vagrant](./DevelopmentEnvironmentvagrant.md)
+    * [vagrant](./DevelopmentEnvironment/vagrant.md)
+    * [homestead](./DevelopmentEnvironment/homestead.md)
 
 * [Book List](./Books/Book.md)
     * [Master`s Blog](./Books/blog.md)
