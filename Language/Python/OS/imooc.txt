@@ -1,7 +1,0 @@
-[userinfo]
-name = zhansan
-pwd = abc
-
-[study]
-python_base = 10
-python_junior = 20

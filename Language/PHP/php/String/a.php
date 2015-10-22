@@ -1,1 +1,0 @@
-<?php function fa(){echo 'in a';} ?>
