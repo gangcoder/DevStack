@@ -1,0 +1,18 @@
+<!DOCTYPE html><!--STATUS OK-->
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="dns-prefetch" href="//s1.bdstatic.com"/>
+	<link rel="dns-prefetch" href="//t1.baidu.com"/>
+	<link rel="dns-prefetch" href="//t2.baidu.com"/>
+	<link rel="dns-prefetch" href="//t3.baidu.com"/>
+	<link rel="dns-prefetch" href="//t10.baidu.com"/>
+	<link rel="dns-prefetch" href="//t11.baidu.com"/>
+	<link rel="dns-prefetch" href="//t12.baidu.com"/>
+	<link rel="dns-prefetch" href="//b1.bdstatic.com"/>
+	<title>百度一下，你就知道</title>
+	<link href="http://s1.bdstatic.com/r/www/cache/static/home/css/index.css" rel="stylesheet" type="text/css" />
+	<!--[if lte IE 8]><style index="index" >#content{height:480px\9}#m{top:260px\9}</style><![endif]-->
+	<!--[if IE 8]><style index="index" >#u1 a.mnav,#u1 a.mnav:visited{font-family:simsun}</style><![endif]-->
+	<script>var hashMatch = document.location.href.match(/#+(.*wd=[^&
