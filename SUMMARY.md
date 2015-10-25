@@ -30,8 +30,7 @@
 * [Language Common](./LanguageCommon/languagecommon.md)
     * [Code Structure](./LanguageCommon/Structure/structure.md)
     * [Code Style](./LanguageCommon/codestyle.md)
-    * [DesignPattern](./LanguageCommon/DesignPattern/DesignPattern.md)
-        * [DesignPattern](./LanguageCommon/DesignPattern/patternsegment.md)
+    * [设计模式](./LanguageCommon/DesignPattern/DesignPattern.md)
     * [NameSpace](./LanguageCommon/NameSpace/namespace.md)
     * [WeChat](./LanguageCommon/WeChat/WeChat.md)
     * [RegularExpression](./LanguageCommon/RegularExpression.md)
@@ -41,7 +40,6 @@
 
 * [DataBase](./DataBase/database.md)
     * [Redis](./DataBase/Redis/redis.md)
-    * [Redis](./DataBase/Redis/RedisNote/RedisReferManual.html)
     * [MySQL](./DataBase/mysql/mysql.md)
 
 * [Foundation](./Foundation/foundation.md)
