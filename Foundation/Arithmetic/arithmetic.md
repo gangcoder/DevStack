@@ -4,9 +4,24 @@
 - ***[经典数据结构与算法剖析](http://study.163.com/course/courseMain.htm?courseId=555010#/courseDetail)
 - ***[网易算法资料](http://v.163.com/special/opencourse/algorithms.html)
 
+## 算法
+
+### 排序算法
+
+- 插入排序
+- 归并排序
+- 推排序
+
+贪婪算法
+
+动态规划
+
+分而治之
+
 ## 书籍
 
 - 算法导论
+- 数据结构与算法 C语言描述
 
 ## 资源
 
