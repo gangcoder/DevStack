@@ -18,9 +18,9 @@
 
 ---
 
-Markdown源码地址 [https://github.com/hubeixugang/Accumulate](https://github.com/hubeixugang/Accumulate)
+Markdown源码地址 [https://github.com/ironxu/Accumulate](https://github.com/ironxu/Accumulate)
 
-静态页面地址 [http://hubeixugang.github.io](http://hubeixugang.github.io)
+静态页面地址 [http://ironxu.github.io](http://ironxu.github.io)
 
 构建工具:Gitbook + Markdown
 
