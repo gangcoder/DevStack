@@ -45,6 +45,7 @@
 * [Foundation](./Foundation/foundation.md)
     * [Linux](./Foundation/Linux/linux.md)
     * [Arithmetic](./Foundation/Arithmetic/tree.md)
+        * [堆排序](./Foundation/Arithmetic/sort/heapsort.md)
     * [算法与数据结构](./Foundation/Arithmetic/arithmetic.md)
         * [算法与数据结构](./Foundation/Arithmetic/complexity.md)
 
