@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="6.8" data-basepath=".." data-revision="Thu Oct 22 2015 16:03:51 GMT+0800 (中国标准时间)">
+    <div class="book" data-level="6.8" data-basepath=".." data-revision="Wed Oct 28 2015 10:20:09 GMT+0800 (中国标准时间)">
     
 
 <div class="book-summary">
@@ -435,7 +435,7 @@
                         
                             <b>1.2.7.</b>
                         
-                        Lua String
+                        Lua 元表
                     </a>
                 
             
@@ -557,23 +557,10 @@
                         
                             <b>2.3.</b>
                         
-                        DesignPattern
+                        设计模式
                     </a>
                 
             
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="2.3.1" data-path="LanguageCommon/DesignPattern/patternsegment.html">
-            
-            <span><b>2.3.1.</b> DesignPattern</span>
-            
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -703,20 +690,13 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="DataBase/Redis/RedisNote/RedisReferManual.html">
-            
-            <span><b>3.2.</b> Redis</span>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3" data-path="DataBase/mysql/mysql.html">
+        <li class="chapter " data-level="3.2" data-path="DataBase/mysql/mysql.html">
             
                 
                     <a href="../DataBase/mysql/mysql.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>3.3.</b>
+                            <b>3.2.</b>
                         
                         MySQL
                     </a>
@@ -773,6 +753,27 @@
                     </a>
                 
             
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="Foundation/Arithmetic/sort/heapsort.html">
+            
+                
+                    <a href="../Foundation/Arithmetic/sort/heapsort.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.1.</b>
+                        
+                        堆排序
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -1370,7 +1371,125 @@
                 
                     <section class="normal" id="section-">
                     
-                        
+                        <h1 id="homestead">homestead</h1>
+<p>Laravel Homestead&#x662F;&#x4E00;&#x4E2A;&#x5B98;&#x65B9;&#x9884;&#x5C01;&#x88C5;&#x7684;Vagrant&#x201C;&#x7BB1;&#x5B50;&#x201D;</p>
+<p>&#x5185;&#x7F6E; Nginx&#x3001;PHP 5.6&#x3001;MySQL&#x3001;Postgres&#x3001;Redis&#x3001;Memcached &#x7B49;&#x5E38;&#x7528;&#x8F6F;&#x4EF6;</p>
+<h2 id="%E5%AE%89%E8%A3%85">&#x5B89;&#x88C5;</h2>
+<p>&#x5B89;&#x88C5;VirtualBox &#x548C; Vagrant</p>
+<h3 id="%E6%B7%BB%E5%8A%A0-laravel-homestead-%E7%9B%92%E5%AD%90">&#x6DFB;&#x52A0; <code>laravel/homestead</code> &#x76D2;&#x5B50;</h3>
+<p><code>vagrant box add laravel/homestead</code></p>
+<h3 id="%E5%85%8B%E9%9A%86-homestead-%E9%85%8D%E7%BD%AE">&#x514B;&#x9686; homestead &#x914D;&#x7F6E;</h3>
+<p>git &#x514B;&#x9686;</p>
+<p><code>git clone https://github.com/laravel/homestead.git Homestead</code></p>
+<p>composer &#x5B89;&#x88C5;&#x65B9;&#x5F0F;</p>
+<p><code>composer global require &quot;laravel/homestead=~2.0&quot;</code></p>
+<p><code>~/.composer/vendor/bin</code> &#x76EE;&#x5F55;&#x6DFB;&#x52A0;&#x5230; PATH &#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4E2D;&#x540E;&#xFF0C;&#x53EF;&#x6267;&#x884C;<code>homestead</code></p>
+<h3 id="%E7%BC%96%E8%BE%91homestead-yaml%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">&#x7F16;&#x8F91;Homestead.yaml&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<p>&#x751F;&#x6210; Homestead.yaml &#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<p>homestead&#x65B9;&#x5F0F; <code>homestead init</code></p>
+<p>shell&#x65B9;&#x5F0F; <code>bash init.sh</code></p>
+<p>&#x7F16;&#x8F91; Homestead.yaml</p>
+<p>homestead&#x65B9;&#x5F0F; <code>homestead edit</code></p>
+<p>&#x76F4;&#x63A5;&#x7F16;&#x8F91; <code>vim ~/.homestead/Homestead.yaml</code></p>
+<h2 id="%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%93%8D%E4%BD%9C">&#x914D;&#x7F6E;&#x4E0E;&#x64CD;&#x4F5C;</h2>
+<h3 id="%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3">&#x914D;&#x7F6E;&#x8BE6;&#x89E3;</h3>
+<pre><code>ip: &quot;192.168.10.10&quot;
+memory: 512
+cpus: 1
+provider: virtualbox # &#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684; Vagrant prodiver&#xFF1A;virtualbox&#x8FD8;&#x662F;vmware_fusion
+
+authorize: ~/.ssh/id_rsa.pub # &#x516C;&#x94A5;&#x8DEF;&#x5F84;
+
+keys:
+    - ~/.ssh/id_rsa # &#x79D8;&#x94A5;&#x8DEF;&#x5F84;
+
+folders: # &#x5171;&#x4EAB;&#x76EE;&#x5F55;
+    - map: ~/Code
+      to: /home/vagrant/Code
+
+sites: # &#x914D;&#x7F6E;&#x7AD9;&#x70B9;
+    - map: homestead.app
+      to: /home/vagrant/Code/Laravel/public
+
+databases:
+    - homestead
+
+variables:
+    - key: &apos;APP_ENV&apos;
+      value: &apos;local&apos;
+    - key: &apos;APP_DEBUG&apos;
+      value: &apos;true&apos;
+
+# blackfire: # Blackfire Profiler&#x5206;&#x6790;&#x5DE5;&#x5177;
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports: # &#x81EA;&#x5B9A;&#x4E49;&#x7AEF;&#x53E3;&#x8F6C;&#x53D1;
+#     - send: 93000
+#       to: 9300
+#     - send: 7777
+#       to: 777
+#       protocol: udp
+</code></pre><h3 id="%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%93%8D%E4%BD%9C">&#x865A;&#x62DF;&#x673A;&#x64CD;&#x4F5C;</h3>
+<p><code>Homestead</code> &#x76EE;&#x5F55;&#x4E0B;</p>
+<ol>
+<li>&#x5F00;&#x673A;&#xFF1A; vagrant up</li>
+<li>&#x5173;&#x673A;&#xFF1A; vagrant halt </li>
+<li>&#x9500;&#x6BC1;&#xFF1A; vagrant destroy --force</li>
+<li>&#x767B;&#x5F55;:  vagrant ssh</li>
+</ol>
+<h3 id="%E8%AE%BF%E9%97%AE%E7%BD%91%E7%AB%99">&#x8BBF;&#x95EE;&#x7F51;&#x7AD9;</h3>
+<ol>
+<li>&#x7ED1;&#x5B9A;hosts <code>192.168.10.10    homestead.app</code></li>
+<li>&#x8BBF;&#x95EE; <code>http://homestead.app</code></li>
+</ol>
+<h2 id="%E7%99%BB%E5%BD%95">&#x767B;&#x5F55;</h2>
+<h3 id="ssh%E7%99%BB%E5%BD%95">SSH&#x767B;&#x5F55;</h3>
+<ol>
+<li>&#x901A;&#x8FC7;ssh&#x767B;&#x5F55; <code>ssh vagrant@127.0.0.1 -p 2222</code></li>
+</ol>
+<p>&#x6216;&#x8005;&#x521B;&#x5EFA;&#x522B;&#x540D; <code>alias vm=&quot;ssh vagrant@127.0.0.1 -p 2222&quot;</code>&#xFF0C;&#x4F7F;&#x7528;vm&#x767B;&#x5F55;</p>
+<ol>
+<li>&#x901A;&#x8FC7;&#x5728;Homestead &#x76EE;&#x5F55;&#x4F7F;&#x7528; vagrant ssh &#x547D;&#x4EE4;</li>
+</ol>
+<h3 id="%E8%BF%9E%E6%8E%A5%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%85mysql">&#x8FDE;&#x63A5;&#x865A;&#x62DF;&#x673A;&#x5185;Mysql</h3>
+<p><code>mysql -h 127.0.0.1:33060 -u homestead -p secret</code></p>
+<h3 id="%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84">&#x7AEF;&#x53E3;&#x6620;&#x5C04;</h3>
+<ul>
+<li>SSH: 2222 &#x2192; Forwards To 22</li>
+<li>HTTP: 8000 &#x2192; Forwards To 80</li>
+<li>HTTPS: 44300 &#x2192; Forwards To 443</li>
+<li>MySQL: 33060 &#x2192; Forwards To 3306</li>
+<li>Postgres: 54320 &#x2192; Forwards To 5432</li>
+</ul>
+<p><strong>&#x589E;&#x52A0;&#x989D;&#x5916;&#x7AEF;&#x53E3;</strong></p>
+<pre><code>ports:
+    - send: 93000
+      to: 9300
+    - send: 7777
+      to: 777
+      protocol: udp
+</code></pre><h3 id="%E5%A2%9E%E5%8A%A0%E7%AB%99%E7%82%B9">&#x589E;&#x52A0;&#x7AD9;&#x70B9;</h3>
+<p>&#x65B9;&#x5F0F;&#x4E00;</p>
+<ol>
+<li>Homestead.yaml &#x6587;&#x4EF6;&#x4E2D;&#x589E;&#x52A0;&#x7AD9;&#x70B9;</li>
+<li>Homestead &#x76EE;&#x5F55;&#x4E2D;&#x6267;&#x884C; vagrant provision</li>
+</ol>
+<p>&#x4F1A;&#x7834;&#x574F;&#x4EE5;&#x540E;&#x6570;&#x636E;&#x5E93;</p>
+<p>&#x65B9;&#x5F0F;&#x4E8C; Homestead&#x73AF;&#x5883;&#x4E2D;&#x7684; <code>serve</code> &#x547D;&#x4EE4;</p>
+<ol>
+<li>SSH &#x8FDB;&#x5165; Homestead &#x73AF;&#x5883;&#x4E2D;</li>
+<li>&#x6267;&#x884C;&#x4E0B;&#x5217;&#x547D;&#x4EE4;<code>serve domain.app /home/vagrant/Code/path/to/public/directory 80</code></li>
+</ol>
+<p><strong>&#x53C2;&#x8003;&#x8D44;&#x6599;</strong></p>
+<ul>
+<li><a href="http://laravel-china.org/docs/5.0/homestead" target="_blank">Laravel Homestead</a></li>
+<li><a href="https://blackfire.io/" target="_blank">blackfire</a></li>
+<li><a href="http://docs.vagrantup.com/v2/synced-folders/nfs.html" target="_blank">NFS</a></li>
+</ul>
+
                     
                     </section>
                 
