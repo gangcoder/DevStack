@@ -22,7 +22,7 @@
         * [Lua Data Structures](./Language/Lua/DataStructures/datastructures.md)
         * [Lua RegularExpression](./Language/Lua/LuaString/LuaRegularExpression.md)
         * [Lua String](./Language/Lua/LuaString/luastring.md)
-        * [Lua String](./Language/Lua/MetaTable/metatable.md)
+        * [Lua 元表](./Language/Lua/MetaTable/metatable.md)
     * [Shell](./Language/Shell/shell.md)
         * [shell syntax](./Language/Shell/syntax.md)
     * [Python](./Language/Python/python.md)
