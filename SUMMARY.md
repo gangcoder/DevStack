@@ -65,6 +65,7 @@
     * [Editor](./DevEnv/Editor/editor.md)
         * [Tmux](./DevEnv/Editor/tmux.md)
         * [VIM](./DevEnv/Editor/VIM.md)
+        * [vim 配色](./DevEnv/Editor/vimcolor.md)
         * [NERDTree](./DevEnv/Editor/NERDTree.md)
     * [Git](./DevEnv/Git/Git.md)
         * [GitStrategy](./DevEnv/Git/gitstrategy.md)
