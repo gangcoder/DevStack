@@ -136,10 +136,11 @@ zend_extension=/usr/local/php7/lib/php/extensions/no-debug-non-zts-20141001/opca
 /etc/init.d/php7-fpmstart
 ```
 
->参考
 
 ## FPM-PHP 配置
 
 [https://typecodes.com/web/php7configure.html](https://typecodes.com/web/php7configure.html)
 
+
+> 参考
 - [http://www.hdj.me/php7-install-note?utm_source=tuicool](http://www.hdj.me/php7-install-note?utm_source=tuicool)
