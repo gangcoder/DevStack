@@ -58,4 +58,41 @@ Composer 是 PHP 的一个依赖管理工具。申明项目所依赖的代码库
 
 第三方的代码到一个指定的目录 vendor
 
+> 可以通过直接运行 `composer require cebe/markdown "~1.0.1"` 方式安装
+
 **composer.lock**
+
+安装依赖后，Composer 将把安装时确切的版本号列表写入 composer.lock 文件, 以锁定该项目的特定版本
+
+install 命令将会检查`composer.lock`是否存在, 如果存在下载指定版本而忽略 composer.json
+
+update 命令将获取最新匹配的版本（根据你的 composer.json 文件）并将新版本更新进锁文件
+
+## Packagist
+
+[composer 资源库](https://packagist.org/)
+
+### 自动加载
+
+composer 生成`vendor/autoload.php` 以支持自动加载
+
+```require 'vendor/autoload.php';```
+
+**自定义autoload**
+
+```
+{
+    "autoload": {
+        "psr-4": {"Acme\\": "src/"}
+    }
+}
+```
+
+ PSR-4 autoloader 到 Acme 命名空间
+
+引用`vendor/autoload.php`将返回 autoloader 的实例
+
+**classmap**
+
+允许不符合 PSR-0 规范的类被自动加载
+
