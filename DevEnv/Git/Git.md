@@ -17,6 +17,15 @@ git add
 git commit -m 'comment'
 ```
 
+### 创建新文件夹
+
+	$ mkdir 【目录名】
+	$ cd [目录名】
+	$ pwd
+
+###查看文件内容
+	$ cat <filename>
+
 ### 状态与差异
 
 ```
@@ -75,11 +84,35 @@ git checkout --filename
 
 `git clone git_url` 克隆远程仓库
 
+###
 ### 推送
 
 `git push -u origin master`
 
 -u 在远程和本地分支间建立联系,第一次建立即可
+
+##查看远程库：
+
+	$ git remote
+**origin**为远程库的默认名称
+
+###更详细的信息：
+
+	$ git remote -v
+###推送该分支的所有东西到远程库：
+
+	$ git push origin master
+###如果推送其他分支：
+
+	$ git push origin dev
+###如果多人协作有冲突，使用**git pull**，在本地合并，解决冲突，再推送
+	$ git pull
+###如果失败了，使用下面的命令：
+
+	$ git branch --set-upstream dev]origin/dev
+	$ git pull
+	$ git commit -m 'merge & filename'
+	$ git push origin dev
 
 ### 抓取分支
 
