@@ -17,6 +17,15 @@ git add
 git commit -m 'comment'
 ```
 
+### 创建新文件夹
+
+	$ mkdir 【目录名】
+	$ cd [目录名】
+	$ pwd
+
+###查看文件内容
+	$ cat <filename>
+
 ### 状态与差异
 
 ```
@@ -35,9 +44,11 @@ git log --graph --pretty=oneline --abbrev-commit 查看分支情况
 
 ### 回退与撤销
 
-```
-git reset --hard HEAD^ HEAD表示当前版本，HEAD^^表示前2各版本 HEAD~100表示前100各版本
-git reset --hard commit_id 回退到特定版本
+	git reset --hard HEAD^ 
+HEAD表示当前版本，HEAD^^表示前2各版本 HEAD~100表示前100各版本
+
+	git reset --hard commit_id 
+回退到特定版本
 ```
 
 `git checkout --filename`
@@ -73,11 +84,35 @@ git checkout --filename
 
 `git clone git_url` 克隆远程仓库
 
+###
 ### 推送
 
 `git push -u origin master`
 
 -u 在远程和本地分支间建立联系,第一次建立即可
+
+##查看远程库：
+
+	$ git remote
+**origin**为远程库的默认名称
+
+###更详细的信息：
+
+	$ git remote -v
+###推送该分支的所有东西到远程库：
+
+	$ git push origin master
+###如果推送其他分支：
+
+	$ git push origin dev
+###如果多人协作有冲突，使用**git pull**，在本地合并，解决冲突，再推送
+	$ git pull
+###如果失败了，使用下面的命令：
+
+	$ git branch --set-upstream dev]origin/dev
+	$ git pull
+	$ git commit -m 'merge & filename'
+	$ git push origin dev
 
 ### 抓取分支
 
@@ -158,6 +193,7 @@ git stash apply stash@{0} 恢复指定的工作区
 [github ignore](https://github.com/github/gitignore)
 
 忽略文件原则：
+
 - 自动生成文件
 - 中间件
 - 敏感信息
@@ -175,6 +211,51 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 ```
 
 global 配置文件 ~/.gitconfig
+
+#搭建Git服务器
+
+##在Linux上，Ubuntu或Bebian，命令较简单
+
+###第一步，安装Git：
+
+	$ sudo apt-get install git
+### 第二步，创建一个Git用户，运行git服务 ###
+
+	$ sudo adduser git
+###第三步，创建证书登录：
+
+####收集所有需要登录的用户的公钥，就是他们自己的**id_rsa.pub**文件，把所有公钥导入到**/home/git/.ssh/authorized_keys**文件里，一行一个
+
+###第四步，初始化Git仓库：
+####选定一个目录为Git仓库，假定在/usr/sample.git,在/usr目录下输入
+	$ sudo git init --bare sample.git
+
+该owner该为**git**:
+
+	$ sudo chown -R git:git sample.git
+
+###第五步，禁用shell登录：
+###安全考虑，第二步创建的**git**用户不允许登录shell，可以通过编辑**/etc/passwd**文件完成，找到类似下面一行：
+	git:x:1001:1001:,,,:/home/git:/bin/bash
+改为：
+
+	git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
+
+这样，git用户可以正常通过ssh使用git，但无法登录shell
+###第六步，克隆远程仓库：
+	$ git clone git@server:/usr/sample.git
+剩下的使用和前面的一样
+
+#管理公钥：
+
+###团队很小，将每个人的公钥收集放在服务器的**/home/git/.ssh/authorized_keys**文件里就行。如果有几百人，可以使用Gitosis来管理公钥
+
+#管理权限：
+
+###防止员工窃取代码，可以使用Gitolite
+	
+
+
 
 [http://itmyhome.com/git/](http://itmyhome.com/git/)
 [http://www.ituring.com.cn/article/202419](http://www.ituring.com.cn/article/202419)
