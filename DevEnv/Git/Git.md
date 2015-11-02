@@ -16,6 +16,20 @@ git init
 git add
 git commit -m 'comment'
 ```
+### Git命令行创建新的本地仓库
+
+	echo # [仓库名1] >> README.md
+	git init 
+	git add README.md
+	git commit -m 'first commit'
+	git remote add origin git@github.com:nusr/[仓库名].git
+	git push -u origin master
+
+###在命令行中推送存在的本地库
+
+	git remote add origin git@github.com:nusr/[仓库名1].git
+	git push -u origin master
+
 
 ### 创建新文件夹
 
@@ -208,6 +222,7 @@ git config --global alias.br branch
 git config --global alias.unstage 'reset HEAD'
 git config --global alias.last 'log -1'
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+$ git config --global alias.unstage 'reset HEAD'
 ```
 
 global 配置文件 ~/.gitconfig
