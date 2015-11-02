@@ -62,7 +62,7 @@ Composer 是 PHP 的一个依赖管理工具。申明项目所依赖的代码库
 
 **composer.lock**
 
-安装依赖后，Composer 将把安装时确切的版本号列表写入 composer.lock 文件, 以锁定该项目的特定版本
+安装依赖后，Composer 将把安装时确切的版本号列表写入 composer.lock 文件, 以锁定该项目所依赖包的特定版本
 
 install 命令将会检查`composer.lock`是否存在, 如果存在下载指定版本而忽略 composer.json
 
@@ -96,3 +96,76 @@ composer 生成`vendor/autoload.php` 以支持自动加载
 
 允许不符合 PSR-0 规范的类被自动加载
 
+## 库(资源包)
+
+### 项目与包
+
+包含`composer.json` 的目录就是一个包, 添加一个 require 就是在创建一个依赖于其它库的包
+
+```
+{
+    "name": "acme/hello-world", # 创建一个名为 acme/hello-world 的项目
+    "require": {
+        "monolog/monolog": "1.0.*"
+    }
+}
+```
+
+**平台软件包**
+
+Composer 将那些已经安装在系统上,如PHP本身，扩展和系统库，但并不是由 Composer 安装的包视为一个虚拟的平台软件包
+
+**指明版本**
+
+```
+{
+    "version": "1.0.0"
+}
+```
+
+### 发布到VCS
+
+可以将acme/hello-world 库发布在 GitHub 上的 github.com/username/hello-world
+
+```
+{
+    "name": "acme/blog",
+    "repositories": [ # 指明仓库所在位置
+        {
+            "type": "vcs",
+            "url": "https://github.com/username/hello-world"
+        }
+    ],
+    "require": {
+        "acme/hello-world": "dev-master" # 添加依赖
+    }
+}
+```
+
+**发不到packagist**
+
+将包发布到 packagist 上，即可默认使用
+
+## 命令行
+
+- init
+- install
+- update
+- require
+- global
+- search
+- show
+- depends
+- validate
+- status
+- self-update
+- config
+- create-project 下载包，并安装包的依赖
+
+## 架构
+
+## 资源库
+
+## 社区
+
+[参考](http://docs.phpcomposer.com/)

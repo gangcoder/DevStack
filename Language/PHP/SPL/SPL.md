@@ -1,5 +1,9 @@
 # SPL 数据结构
 
+Standard PHP Library: 一组解决典型问题的接口与类的集合
+
+
+
 1. SplDoublyLinkedList — The SplDoublyLinkedList class
 1. SplStack — The SplStack class
 1. SplQueue — The SplQueue class
