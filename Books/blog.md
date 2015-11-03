@@ -59,6 +59,7 @@
 - [PHP面试题](http://www.cnblogs.com/zyf-zhaoyafei/p/4828358.html)
 - [老高的技术博客](http://www.phpgao.com/html_tag_clear.html)
 - [看云书籍](http://www.kancloud.cn/explore)
+- [Chrome开发者工具-阅读列表](http://geek.csdn.net/news/detail/41767)
 
 ## 工具
 
