@@ -2,6 +2,10 @@
 
 ## 基础
 
+## 登录到MySQL
+
+`mysql -D 所选择的数据库名 -h 主机名 -u 用户名 -p`
+
 ### DISTINCT
 
 关键词 DISTINCT 用于返回唯一不同的值。
