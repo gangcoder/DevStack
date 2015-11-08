@@ -1,15 +1,15 @@
 {
-    "title":"Outer Brain",
+    "title":"知识速查笔记",
     "description":"blog of xg",
     "keywords":"git,技术,学习,提升",
-    "github":"ironxu/Accumulate",
+    "github":"ironxu/DevStack",
     "githubHost":"https://github.com/ironxu",
     "links": {
         "contribute": false,
         "sidebar": {
-            "About Author":"https://github.com/hubeixugang",
-            "Questions and Issues":"https://github.com/hubeixugang/Accumulate/issues",
-            "Eidt and Contribute":"https://github.com/hubeixugang/Accumulate"
+            "About Author":"https://github.com/ironxu",
+            "Questions and Issues":"https://github.com/ironxu/DevStack/issues",
+            "Eidt and Contribute":"https://github.com/ironxu/DevStack"
         },
         "tail": {
             "Xu Gang":"mailto:hubeixugang@163.com"
