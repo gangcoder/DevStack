@@ -42,7 +42,7 @@
     * [Redis](./DataBase/Redis/redis.md)
     * [MySQL](./DataBase/mysql/mysql.md)
 
-* [Foundation](./Foundation/foundation.md)
+* [基础知识](./Foundation/foundation.md)
     * [Linux](./Foundation/Linux/linux.md)
     * [算法](./Foundation/Arithmetic/arithmetic.md)
         * [复杂度](./Foundation/Arithmetic/complexity.md)
