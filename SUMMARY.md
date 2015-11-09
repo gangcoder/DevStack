@@ -44,10 +44,11 @@
 
 * [Foundation](./Foundation/foundation.md)
     * [Linux](./Foundation/Linux/linux.md)
-    * [Arithmetic](./Foundation/Arithmetic/tree.md)
-        * [堆排序](./Foundation/Arithmetic/sort/heapsort.md)
-    * [算法与数据结构](./Foundation/Arithmetic/arithmetic.md)
-        * [算法与数据结构](./Foundation/Arithmetic/complexity.md)
+    * [算法](./Foundation/Arithmetic/arithmetic.md)
+        * [复杂度](./Foundation/Arithmetic/complexity.md)
+        * [排序](./Foundation/Arithmetic/sort.md)
+        * [查找](./Foundation/Arithmetic/search.md)
+    * [数据结构](./Foundation/DataStructure/datastructure.md)
 
 * [运维与架构](./Ops/ops.md)
     * [Nginx使用](./Ops/nginx.md)
