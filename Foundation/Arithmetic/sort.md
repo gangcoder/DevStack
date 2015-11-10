@@ -88,7 +88,25 @@ function selectsort($arr)
 
 ## 直接插入排序
 
+```
+function insertsort($arr)
+{
+    for ($i = 1; $i < count($arr); $i++) { 
+        if ($arr[$i] < $arr[$i - 1]) {
+            $value = $arr[$i];
+            for ($j = $i - 1; $j >= 0 && $arr[$j] > $value; $j--) { 
+                $arr[$j + 1] = $arr[$j];
+            }
+            $arr[$j + 1] = $value;
+        }
+    }
+    return $arr;
+}
+```
+
 ## 希尔排序
+
+
 
 ## 堆排序
 
