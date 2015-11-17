@@ -1,4 +1,11 @@
-# 设计模式
+# 设计原则与模式
+
+单一职责
+里氏替换
+依赖倒置
+接口隔离
+迪米特法则
+开闭原则
 
 ## 工厂模式 Factory
 
@@ -304,10 +311,6 @@ $f2 = $ul->find(new RandomStrategy);
 print_r($f2);
 ```
 
-## cite
-
-- [IBM 十个设计模式](https://www.ibm.com/developerworks/cn/opensource/os-php-designpatterns/)
-
 ## 适配器模式
 
 ## 迭代器模式
@@ -322,3 +325,6 @@ print_r($f2);
 
 在客户端与实体之间建立一个代理对象，客户端对实体进行操作全部委派给代理对象，隐藏实体的具体实现细节
 
+## cite
+
+- [IBM 十个设计模式](https://www.ibm.com/developerworks/cn/opensource/os-php-designpatterns/)
