@@ -12,6 +12,7 @@
 
 ## 2. C/C++
 
+- [ ]《The C Programming Language》
 - [ ]《C/C++ Primer》
 - [ ]《Effective C++》
 - [ ]《Pointers on C》
