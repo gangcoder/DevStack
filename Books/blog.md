@@ -66,3 +66,7 @@
 - [Docker](http://dockerpool.com/static/books/docker_practice/index.html)
 - [github](https://github.com/justjavac/free-programming-books-zh_CN)
 - [UML](http://creately.com/)
+
+## 编程规范
+- [C++ Programming Style Guidelines](http://geosoft.no/development/cppstyle.html)
+- [Google 开源项目风格指南 (中文版)](https://github.com/zh-google-styleguide)
