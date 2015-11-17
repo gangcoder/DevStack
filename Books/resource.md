@@ -15,3 +15,5 @@
 
 
 ## [windows软件和资料下载](http://msdn.itellyou.cn/)
+
+## [可以用在VC，VS中的图形库](http://www.easyx.cn/)
