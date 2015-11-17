@@ -60,9 +60,14 @@
 - [老高的技术博客](http://www.phpgao.com/html_tag_clear.html)
 - [看云书籍](http://www.kancloud.cn/explore)
 - [Chrome开发者工具-阅读列表](http://geek.csdn.net/news/detail/41767)
+- [http://collect.w3ctrain.com/](http://collect.w3ctrain.com/)
 
 ## 工具
 
 - [Docker](http://dockerpool.com/static/books/docker_practice/index.html)
 - [github](https://github.com/justjavac/free-programming-books-zh_CN)
 - [UML](http://creately.com/)
+
+## 类似内容
+
+- [http://segmentfault.com/q/1010000002404545](http://segmentfault.com/q/1010000002404545)
