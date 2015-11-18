@@ -12,3 +12,8 @@
 - [常见编程方向学习路线图](http://ku.itcast.cn/Map)
 - [PHP教程](http://pan.baidu.com/s/1sj85C7N#path=%252F)
 - [一个比较好的视频库](http://ku.itcast.cn/)
+
+
+## [windows软件和资料下载](http://msdn.itellyou.cn/)
+
+## [可以用在VC，VS中的图形库](http://www.easyx.cn/)

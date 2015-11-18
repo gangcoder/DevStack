@@ -68,6 +68,27 @@
 - [github](https://github.com/justjavac/free-programming-books-zh_CN)
 - [UML](http://creately.com/)
 
+## 编程规范
+- [C++ Programming Style Guidelines](http://geosoft.no/development/cppstyle.html)
+- [Google 开源项目风格指南 (中文版)](https://github.com/zh-google-styleguide)
+
+## 计算机体系
+
+- [实验楼](https://www.shiyanlou.com/courses/)
+- [慕课网](http://www.imooc.com/)
+- [自强学堂](http://www.ziqiangxuetang.com/)
+- [网易云课堂](http://study.163.com/) ,这个网站的学习东西覆盖面很广
+- [传智播客](http://www.itcast.cn/)
+
+## 疯狂编程
+- [Programming Ability Test](http://www.patest.cn/)
+- [蓝桥杯](http://www.lanqiao.org/)
+- [牛课网](http://www.nowcoder.com/724836)
+
+## 计算机交流和资料
+- [CSDN](http://www.csdn.net/)
+- [github](https://github.com/)
+
 ## 类似内容
 
 - [http://segmentfault.com/q/1010000002404545](http://segmentfault.com/q/1010000002404545)
