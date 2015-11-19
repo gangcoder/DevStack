@@ -50,6 +50,7 @@
         * [查找](Foundation/Arithmetic/search.md)
         * [哈希分布](Foundation/Arithmetic/hash.md)
     * [数据结构](Foundation/DataStructure/datastructure.md)
+    * [HTTP协议](Foundation/Protocol/http.md)
 
 * [运维与架构](Ops/ops.md)
     * [Nginx使用](Ops/nginx.md)
