@@ -5,11 +5,11 @@
 - [x] HTTP报文
 - [x] HTTP状态码
 - [x] WEB服务器
-- [ ] HTTP首部
-- [ ] HTTPS
+- [x] HTTP首部
+- [x] HTTPS
 - [ ] 认证
 - [ ] 追加协议
-- [ ] 构建WEB内容
+- [x] 构建WEB内容
 - [ ] Web攻击技术
 
 ## Web网络基础
@@ -55,9 +55,17 @@ DNS
 
 ## HTTP首部
 
+1. 报文首部
+2. 请求首部字段
+3. 响应首部字段
+4. 实体首部字段
+5. Cookie首部字段
+6. 其他首部字段
 
 ## HTTPS
 
+1. HTTP缺点
+2. HTTP + 加密 + 认证 + 完整性保护
 
 ## 认证
 
@@ -67,9 +75,13 @@ DNS
 
 ## 构建WEB内容
 
+1. HTML + CSS + JS
+2. CGI
+3. XML/JSON
 
 ## Web攻击技术
 
 # 参考与记录
 
 - 《图解HTTP》
+- 《PHP核心技术与最佳实践》
