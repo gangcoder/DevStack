@@ -4,7 +4,7 @@
     "keywords":"git,技术,学习,提升",
     "github":"ironxu/DevStack",
     "githubHost":"https://github.com/ironxu",
-    "plugins": ["collapsible-menu", "gtoc"],
+    "plugins": ["gtoc"],
     "links": {
         "contribute": false,
         "sidebar": {
