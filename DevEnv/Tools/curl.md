@@ -1,21 +1,30 @@
 ## curl
 
+
 ### 查看网页源码
 
 `curl www.sina.com`
+
 
 ### 保存页面 `-o`
 
 `curl -o [文件名] www.sina.com`
 
+```
+-o: 需要指定文件名
+-O: 保留原文件名
+```
+
 直接在curl命令后加上网址，就可以看到网页源码。
 如果要把这个网页保存下来，可以使用-o参数，这就相当于使用wget命令了。
+
 
 ### 自动跳转 `-L`
 
 `curl -L www.sina.com`
 
 有的网址是自动跳转的。使用-L参数，curl就会跳转到新的网址。
+
 
 ### 显示头信息 `-i`
 
@@ -43,6 +52,7 @@ Moved Permanently
 ```
 
 -I 参数则是只显示http response的头信息。
+
 
 ### 显示通信过程 `-v`
 
@@ -77,6 +87,7 @@ Moved Permanently
 The document has moved here.
 ```
 
+
 ### 跟踪详细信息 `trace`
 
 如果你觉得上面的信息还不够，那么下面的命令可以查看更详细的通信过程。
@@ -85,7 +96,10 @@ The document has moved here.
 `curl --trace-ascii output.txt www.sina.com`
 运行后，请打开output.txt文件查看。
 
+
 ### 发送表单信息 `--data 'data'`
+
+`-d 'a=b&c=d'`
 
 发送表单信息有GET和POST两种方法。
 
@@ -101,6 +115,7 @@ POST方法必须把数据和网址分开，curl就要用到--data参数。
 
 `curl --data-urlencode "date=April 1" example.com/form.cgi`
 
+
 ### HTTP动词 `-X 'method'`
 
 curl默认的HTTP动词是GET，使用-X参数可以支持其他动词。
@@ -110,17 +125,20 @@ curl默认的HTTP动词是GET，使用-X参数可以支持其他动词。
 `curl -X DELETE www.example.com`
 
 
+
 ### 文件上传 `--form`
 
 你可以用curl这样上传文件：
 
 `curl --form upload=@localfilename --form press=OK [URL]`
 
+
 ### Referer字段
 
 有时你需要在http request头信息中，提供一个referer字段，表示你是从哪里跳转过来的。
 
 `curl --referer http://www.example.com http://www.example.com`
+
 
 ### User Agent字段 `--user-agent`
 
@@ -132,6 +150,7 @@ curl可以这样模拟：
 `curl --user-agent "[User Agent]" [URL]`
 
 
+
 ### cookie `--cookie`
 
 使用--cookie参数，可以让curl发送cookie。
@@ -140,11 +159,13 @@ curl可以这样模拟：
 
 至于具体的cookie的值，可以从http response头信息的Set-Cookie字段中得到。
 
+
 ### 增加头信息 `--header`
 
 有时需要在http request之中，自行增加一个头信息。--header参数就可以起到这个作用。
 
 `curl --header "Content-Type:application/json" http://example.com`
+
 
 
 ### HTTP认证 `--user`

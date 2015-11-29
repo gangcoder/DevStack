@@ -18,6 +18,9 @@
  *endADT  
  */
 
+/* T为非空串。若主串S中第pos个字符之后存在与T相等的子串，
+ * 则返回第一个这样的子串在S中的位置，否则返回0
+ */
 ind Index(String S, String T, int pos)
 {
     int n, m , i;
@@ -38,3 +41,31 @@ ind Index(String S, String T, int pos)
     }
     return 0;
 }
+
+/* 返回子串T在主串S中第pos个字符之后的位置。若不存在，则函数返回值为0。T非空，1≤pos≤StrLength(S)
+ * 字符串匹配朴素算法
+ */
+
+int Index(String S, String T, int pos)
+{
+    int i = pos;
+    int j = 1;
+    while (i <= S[0] && j <= T[0])
+    {
+        if (S[i] == T[j])
+        {
+            i++;
+            j++;
+        }
+        else
+        {
+            i = i - j + 2;
+            j = 1;
+        }
+    }
+    if (j = T[0])
+        return i - T[0];
+    else
+        return 0;
+}
+
