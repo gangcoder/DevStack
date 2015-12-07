@@ -36,6 +36,7 @@
     * [正则表达式](LanCom/RegularExpression.md)
     * [sprinf 函数](LanCom/sprintf.md)
     * [垃圾回收机制](LanCom/gc.md)
+    * [gzip压缩格式分析](LanCom/gzip.md)
     * [IBM MQSeries](LanCom/MQSeries/mqseries.md)
 
 * [DataBase](DataBase/database.md)
