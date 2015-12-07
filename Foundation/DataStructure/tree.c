@@ -54,6 +54,7 @@ typedef struct
     int r, n;
 }CTree;
 
+
 /* 树的孩子兄弟表示法结构定义 */
 typedef struct CSNode
 {
@@ -61,3 +62,91 @@ typedef struct CSNode
     struct CSNode *firstchild, *rightsib;
 }CSNode, *CSTree;
 
+
+/* 二叉树的二叉链表结点结构定义 */
+typedef struct BiTNode
+{
+    TElemType data;
+    struct BiTNode *lchild, *rchild;
+}BiTNode, *BiTree;
+
+/* 二叉树的前序遍历递归算法 */
+void PreOrderTraverse(BiTree T)
+{
+    if (T == NULL)
+        return;
+    printf("%c", T->data);
+    PreOrderTraverse(T->lchild);
+    PreOrderTraverse(T->rchild);
+}
+
+/* 二叉树的中序遍历递归算法 */
+void InOrderTraverse(BiTree T)
+{
+    if (T == NULL)
+        return;
+    InOrderTraverse(T->lchild);
+    printf("%c", T->data);
+    InOrderTraverse(T->rchild);
+}
+
+/* 二叉树的后序遍历递归算法 */
+void PostOrderTraverse(BiTree T)
+{
+    if (T == NULL)
+        return;
+    PostOrderTraverse(T->lchild);        
+    PostOrderTraverse(T->rchild);        
+    printf("%c", T->data);
+}
+
+/* 按前序输入二叉树中结点的值（一个字符） */
+/* #表示空树，构造二叉链表表示二叉树T。 */
+void CreateBiTree(BiTree *T)
+{
+    TElemType ch;
+    scanf("%c", &ch);
+    if (ch == '#')
+        *T = NULL;
+    else
+    {
+        *T = (BiTree)malloc(sizeof(BiTNode));
+        if (!*T)
+            exit(OVERFLOW);
+        (*T)->data = ch;
+        CreateBiTree(&(*T)->lchild);
+        CreateBiTree(&(*T)->rchild);
+    }
+}
+
+/* 二叉树的二叉线索存储结构定义 */
+typedef enum {Link, Thread} PointerTag;
+typedef struct BiThrNode
+{
+    TElemType data;
+    struct BiThrNode *lchild, *rchild;
+    PointerTag LTag;
+    PointerTag RTag;
+}BiThrNode, *BiThrTee;
+
+BiThrTree pre;                     /* 全局变量，始终指向刚刚访问过的结点 */
+/* 中序遍历进行中序线索化 */
+void InThreading(BiThrTree p)
+{
+    if (p)
+    {
+        InThreading(p->lchild)
+        if (!p->lchild)
+        {
+            p->LTag = Thread;
+            p->lchild = pre;
+        }
+        if (!p->rchild)
+        {
+            pre->RTag = Thread;
+            pre->rchild = p;
+        }
+        pre = p;
+        InThreading(p->rchild);
+    }
+}
