@@ -4,6 +4,7 @@
 - deflate: 一种数据压缩算法,先用 LZ77 压缩，然后用霍夫曼编码压缩
 - gzip: 一种文件结构，通过 defalte 算法压缩数据，然后加上文件头和CRC校验
 - zlib: 提供了 deflate, zlib, gzip 压缩方法函数库；也是一种压缩格式,用 deflate 压缩数据，然后加上 zlib 头和 adler32 校验
+- zip: 以`504b 0304 1400 0000`开始
 
 **十六进制**
 
@@ -20,3 +21,4 @@ gzip: 1f8b 0800 0000 0000 020b 3334 4c4c 7450 7630 3236 3432 2eae 4a4c c949 2d32
 [gzip.php](gzip.php)
 
 [zlib, gzip, deflate格式转换](http://www.cnblogs.com/wc1217/archive/2013/03/09/2951657.html)
+[http://blog.csdn.net/rainharder/article/details/26342919](http://blog.csdn.net/rainharder/article/details/26342919)
